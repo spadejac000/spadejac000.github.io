@@ -2,55 +2,119 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
     <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
-
+    <link rel="stylesheet" href="css/custom.css">
   </head>
   <body>
 
-    <nav>
-      <div class="nav-wrapper">
-        <a href="#" class="brand-logo">Logo</a>
-        <ul id="nav-mobile" class="right hide-on-med-and-down">
-          <li><a href="sass.html">Sass</a></li>
-          <li><a href="badges.html">Components</a></li>
-          <li><a href="collapsible.html">JavaScript</a></li>
-        </ul>
+
+
+
+    <div class="parallax-container">
+      <div class="navbar-fixed">
+        <nav class="navbar">
+          <div class="nav-wrapper">
+            <div class="container">
+              <a href="#" class="brand-logo">Logo</a>
+              <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="sass.html">Home</a></li>
+                <li><a href="badges.html">About</a></li>
+                <li><a href="collapsible.html">Projects</a></li>
+                <li><a href="collapsible.html">Contact</a></li>
+                <li><a href="collapsible.html">Blog</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
       </div>
-    </nav>
+      <div class="parallax header-image"><img src="images/computer-background02.jpg"></div>
+    </div>
+    <div class="section white container">
+      <h1 class="center-align">About</h1>
+      <div class="row">
+        <div class="">
+         <div class="col s6 about">
+           <img src="images/profile_picture.jpeg" class="profile_picture"/>
+         </div>
+         <div class="col s6">
+           <h5>
+             <strong>
+               Hi! Welcome to my website. My name is Jacob Spade and I am a full-stack web developer.
 
+              </br>
+              </br>
+              In this day and age it is essential to have an online presence as a business owner. An online presence give your customers greater accessability to your product or service. If you are looking to have your own website for your business, I can help you make that happen. I have in depth experience with creating a strong user experience, setting up user authenication, and working with databases for user data. Feel free to email me anytime.
+             </strong>
+           </h5>
+         </div>
+        </div>
 
+       <h2 class="center-align skills">Skills</h2>
 
-    <footer class="page-footer">
+         <div class="row">
+           <div class="col s3 center-align"><img class="svg html-svg" src="images/html-svg.png"></div>
+           <div class="col s3 center-align"><img class="svg css-svg" src="images/css-svg.png"></div>
+           <div class="col s3 center-align"><img class="svg" src="images/js-svg.png"></div>
+           <div class="col s3 center-align"><img class="svg react-svg" src="images/react-svg.png"></div>
+         </div>
+         <div class="row">
+           <div class="col s3 center-align"><img class="svg" src="images/mongodb-svg.png"></div>
+           <div class="col s3 center-align"><img class="svg" src="images/express-svg.png"></div>
+           <div class="col s3 center-align"><img class="svg" src="images/node-svg.jpg"></div>
+           <div class="col s3 center-align"><img class="svg" src="images/bootstrap-svg.png"></div>
+         </div>
+         <div class="row">
+           <div class="col s3 center-align"></div>
+           <div class="col s3 center-align"><img class="svg" src="images/sql-svg.png"></div>
+           <div class="col s3 center-align"><img class="svg" src="images/git-svg.png"></div>
+           <div class="col s3 center-align"></div>
+         </div>
+      </div>
+
+    </div>
+    <div class="parallax-container">
+      <div class="parallax"><img src="images/computer-background.jpg"></div>
+    </div>
+
+    <div class="container">
+      <h1 class="center-align">Projects</h1>
+      <hr>
+      <img src="images/blackjack.png" class="portfolio-piece" id="project01"/>
+      <hr>
+      <img src="images/movie-app.png" class="portfolio-piece" id="project02"/>
+      <hr>
+      <img src="images/punchcard-app.png" class="portfolio-piece" id="project03"/>
+    </div>
+
+    <footer class="page-footer grey darken-3">
       <div class="container">
-        <div class="row">
-          <div class="col l6 s12">
-            <h5 class="white-text">Footer Content</h5>
-            <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
-          </div>
-          <div class="col l4 offset-l2 s12">
-            <h5 class="white-text">Links</h5>
-            <ul>
-              <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
-              <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
-              <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
-              <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+        <div class="row center-align">
+            <h5 class="white-text">Contact Information</h5>
+            <ul class="social-media">
+              <li><a class="grey-text text-lighten-3" href="#!"><i class="fab fa-github"></i><p>Github</p></a></li>
+              <li><a class="grey-text text-lighten-3" href="#!"><i class="fab fa-linkedin"></i><p>Linkedin</p></a></li>
+              <li><a class="grey-text text-lighten-3" href="#!"><i class="fas fa-envelope"></i><p>Email</p></a></li>
             </ul>
-          </div>
         </div>
       </div>
       <div class="footer-copyright">
         <div class="container">
-        © 2014 Copyright Text
-        <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+        © 2018
+        <a class="grey-text text-lighten-4 right" href="#!">Home</a>
         </div>
       </div>
     </footer>
 
 
     <!-- Compiled and minified JavaScript -->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+    <script src="js/ScrollMagic.min.js"></script>
     <script type="text/javascript" src="js/app.js"></script>
   </body>
 </html>

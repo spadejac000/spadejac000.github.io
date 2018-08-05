@@ -1,0 +1,140 @@
+.portfolio-piece {
+  width: 100%;
+  padding: 0px;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 1s ease-out;
+}
+
+.portfolio-piece.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.navbar {
+  background-color: transparent;
+  z-index: 100;
+  transition: background-color 1s ease 0s;
+  box-shadow: none;
+}
+
+.header-image {
+  margin-top: -100px;
+  width: 100%;
+}
+
+.header-image p .btn:hover {
+  color: #C57ED3;
+  border-color: #C57ED3;
+}
+
+.navbar {
+  height: 80px;
+  background-color: transparent;
+  border: none;
+  color: white;
+  z-index: 100;
+  transition: background-color 1s ease 0s;
+}
+
+.navbar-default .navbar-brand {
+  margin-top: 10px;
+  color: white;
+}
+.navbar-default .navbar-brand:hover {
+  color: #C57ED3;
+  border: 1px solid #C57ED3;
+}
+.navbar-default .navbar-nav > li > a {
+  color: white;
+  margin: 10px 5px 5px 5px;
+}
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:active, .navbar-default .navbar-nav > li > a:focus {
+  color: #C57ED3;
+  border: 1px solid #C57ED3;
+}
+.navbar-default .navbar-nav > li > a:visited {
+  color: #C57ED3;
+  text-decoration: none;
+}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+  background-color: transparent;
+  color: #C57ED3;
+}
+.navbar-default .navbar-toggle {
+  border-color: #C57ED3;
+}
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+  background-color: #424242;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  color: #C57ED3;
+  background-color: #C57ED3;
+}
+.navbar-default .navbar-collapse.collapse.in ul {
+  background-color: #424242;
+}
+
+/* Solid class attached on scroll past first section */
+.navbar.solid {
+  background-color: #424242;
+  transition: background-color 1s ease 0s;
+  box-shadow: 0 2px 4px black;
+}
+.navbar.solid .navbar-brand {
+  color: #C57ED3;
+  transition: color 1s ease 0s;
+}
+.navbar.solid .navbar-nav > li > a {
+  color: #C57ED3;
+  transition: color 1s ease 0s;
+}
+
+.svg {
+  width: 8em;
+  height: 8em;
+}
+
+.html-svg {
+  width: 11em;
+}
+
+.css-svg {
+  width: 6em;
+}
+
+.react-svg {
+  width: 10em;
+}
+
+.fab, .fas {
+  width: 2em;
+}
+
+.profile_picture {
+  width: 70%;
+  box-shadow: 2px 2px 2px black;
+}
+
+.about {
+  margin-bottom: 3em;
+}
+
+.skills {
+  display: block;
+  clear: both;
+  margin-bottom: 1em;
+}
+
+i {
+  font-size: 2em;
+}
+
+i:hover {
+  color: gold;
+  transition: all 1s ease;
+}
+
+.social-media li {
+  display: inline-block;
+}
