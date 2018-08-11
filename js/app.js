@@ -2,7 +2,7 @@ $(document).ready(function() {
         // Transition effect for navbar
         $(window).scroll(function() {
           // checks if window is scrolled more than 500px, adds/removes solid class
-          if($(this).scrollTop() > 500) {
+          if($(this).scrollTop() > 100) {
               $('.navbar').addClass('solid');
           } else {
               $('.navbar').removeClass('solid');
@@ -35,5 +35,21 @@ $(document).ready(function() {
           triggerElement: '#project03'
         })
         .setClassToggle('#project03', 'fade-in')
-        .addTo(controller);
+        .addTo(controller); 
 });
+
+$('.home').click(function() {
+  $("html, body").animate({ scrollTop: $('#home').offset().top }, 500);
+})
+
+$('.about').click(function() {
+  $("html, body").animate({ scrollTop: $('#about').offset().top }, 500);
+})
+
+$('.projects').click(function() {
+  $("html, body").animate({ scrollTop: $('#projects').offset().top }, 500);
+})
+
+$('.contact').click(function() {
+  $("html, body").animate({ scrollTop: $('#contact').offset().top }, 500);
+})

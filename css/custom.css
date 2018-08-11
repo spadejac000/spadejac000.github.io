@@ -1,9 +1,16 @@
+.title {
+  margin-top: 3em;
+  z-index: 1000;
+  font-size: 3em;
+  text-align: center;
+  color: white;
+}
+
 .portfolio-piece {
-  width: 100%;
+  width: 33.33333333%;
   padding: 0px;
   opacity: 0;
-  transform: translateY(50px);
-  transition: all 1s ease-out;
+  transition: all .5s ease-out;
 }
 
 .portfolio-piece.fade-in {
@@ -137,4 +144,12 @@ i:hover {
 
 .social-media li {
   display: inline-block;
+}
+
+.logo {
+  width: 3em;
+}
+
+footer {
+  margin-top: -5px;
 }
