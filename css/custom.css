@@ -142,7 +142,14 @@ i {
   font-size: 2em;
 }
 
-i:hover {
+i:hover,
+.home:hover,
+.about:hover,
+.projects:hover,
+.contact:hover,
+.resume:hover,
+.brand-logo:hover,
+.top-link:hover {
   color: gold;
   transition: all 1s ease;
 }
@@ -174,6 +181,48 @@ img {
   grid-template-rows: 1fr 1fr;
 }
 
+.zoomImage {
+  position: relative;
+  display: inline-block;
+  z-index: 5;
+}
+
+.overlay {
+  position: absolute;
+  transition: all .7s ease;
+  opacity: 0;
+  background-color: black;
+  z-index: 5;
+}
+
+.zoomImage:hover .overlay {
+  opacity: .7;
+  z-index: 5;
+}
+
+.text {
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+  z-index: 5;
+}
+
+.overlayBottom {
+  height: 0;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  z-index: 5;
+}
+
+.zoomImage:hover .overlayBottom {
+  height: 50%;
+  z-index: 5;
+}
+
 /* Image zoom on hover + Overlay colour */
 .parent {
   overflow: hidden;
@@ -197,4 +246,21 @@ img {
 
 footer {
   z-index: 1;
+}
+
+@media (max-width: 600px) {
+  
+  .svg {
+    margin-bottom: 1em;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .profile_picture {
+    width: 100%;
+  }
+
 }

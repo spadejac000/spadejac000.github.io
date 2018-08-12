@@ -8,7 +8,12 @@ $(document).ready(function() {
               $('.navbar').removeClass('solid');
           }
         });
+
+        // parallax
         $('.parallax').parallax();
+        
+        // sidenav
+        $('.sidenav').sidenav();
 
         // init ScrollMagic
         var controller = new ScrollMagic.Controller();

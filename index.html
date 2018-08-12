@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jacob Spade | Web Developer</title>
 
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="shortcut icon" type="image/png" href="images/favicon-32x32.png"/>
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
@@ -19,21 +20,30 @@
     <div class="parallax-container">
       <div class="navbar-fixed">
         <nav class="navbar">
+
           <div class="nav-wrapper">
             <div class="container">
-              <a href="#" class="brand-logo">Jacob Spade</a>
+              <a href="#home" class="brand-logo">Jacob Spade</a>
+              <a href="#home" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
               <ul id="nav-mobile" class="right hide-on-med-and-down">
                 <li><a href="#home" class="home">Home</a></li>
                 <li><a href="#about" class="about">About</a></li>
                 <li><a href="#projects" class="projects">Projects</a></li>
                 <li><a href="#contact" class="contact">Contact</a></li>
-                <li><a href="#blog">Blog</a></li>
-                <li><a href="#resume">Resume</a></li>
+                <li><a href="pdf/resume.pdf" class="resume">Resume</a></li>
               </ul>
-            </div>
+            </div> 
           </div>
         </nav>
       </div>
+      <ul class="sidenav sidenav-close" id="mobile-demo">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="pdf/resume.pdf">Resume</a></li>
+      </ul>
+
       <div class="title">
           <h1>Full-Stack Web Developer</h1>
       </div>
@@ -41,7 +51,7 @@
         <ul class="social-media">
           <li><a class="grey-text text-lighten-3" href="https://github.com/spadejac000" target="_blank"><i class="fab fa-github"></i></a></li>
           <li><a class="grey-text text-lighten-3" href="https://www.linkedin.com/in/jacob-spade/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
-          <li><a class="grey-text text-lighten-3" href="mailto:spade.jacob@yahoo.com" target="_blank"><i class="fas fa-envelope"></i></a></li>
+          <li><a class="grey-text text-lighten-3" href="mailto:spade.jacob@yahoo.com"><i class="fas fa-envelope"></i></a></li>
         </ul>
       </div>
       <div class="parallax header-image"> 
@@ -52,10 +62,10 @@
       <h1 class="center-align" id="about">About</h1>
       <div class="row">
         <div class="">
-         <div class="col s6 about">
+         <div class="col s12 m6 about">
            <img src="images/profile_picture.jpeg" class="profile_picture"/>
          </div>
-         <div class="col s6">
+         <div class="col s12 m6">
            <h5>
              <strong>
                Hi! Welcome to my website. My name is Jacob Spade and I am a full-stack web developer.
@@ -71,22 +81,16 @@
        <h2 class="center-align skills">Skills</h2>
 
          <div class="row">
-           <div class="col s3 center-align"><img class="svg html-svg" src="images/html-svg.png"></div>
-           <div class="col s3 center-align"><img class="svg css-svg" src="images/css-svg.png"></div>
-           <div class="col s3 center-align"><img class="svg" src="images/js-svg.png"></div>
-           <div class="col s3 center-align"><img class="svg react-svg" src="images/react-svg.png"></div>
+           <div class="col s6 m6 l3 center-align"><img class="svg html-svg" src="images/html-svg.png"></div>
+           <div class="col s6 m6 l3 center-align"><img class="svg css-svg" src="images/css-svg.png"></div>
+           <div class="col s6 m6 l3 center-align"><img class="svg" src="images/js-svg.png"></div>
+           <div class="col s6 m6 l3 center-align"><img class="svg react-svg" src="images/react-svg.png"></div>
          </div>
          <div class="row">
-           <div class="col s3 center-align"><img class="svg" src="images/mongodb-svg.png"></div>
-           <div class="col s3 center-align"><img class="svg" src="images/express-svg.png"></div>
-           <div class="col s3 center-align"><img class="svg" src="images/node-svg.jpg"></div>
-           <div class="col s3 center-align"><img class="svg" src="images/bootstrap-svg.png"></div>
-         </div>
-         <div class="row">
-           <div class="col s3 center-align"></div>
-           <div class="col s3 center-align"><img class="svg" src="images/sql-svg.png"></div>
-           <div class="col s3 center-align"><img class="svg" src="images/git-svg.png"></div>
-           <div class="col s3 center-align"></div>
+           <div class="col s6 m6 l3 center-align"><img class="svg" src="images/mongodb-svg.png"></div>
+           <div class="col s6 m6 l3 center-align"><img class="svg" src="images/express-svg.png"></div>
+           <div class="col s6 m6 l3 center-align"><img class="svg" src="images/node-svg.jpg"></div>
+           <div class="col s6 m6 l3 center-align"><img class="svg" src="images/bootstrap-svg.png"></div>
          </div>
       </div>
 
@@ -98,31 +102,117 @@
       <h1 class="center-align" id="projects">Projects</h1>
       <div class="grid">
         <div class="zoomImage parent">
+          <div class="image">
+            <a href="https://spadejac000.github.io/project1/" class="child parent ">
               <img src="images/blackjack.png" class="portfolio-piece child" id="project01" />
+            </a>
+          </div>
+          <div class="overlay overlayBottom">
+              <div class="text">
+                <p>Blackjack</p>
+                <hr>
+                <p>HTML CSS JavaScript</p>
+              </div>
+          </div>
+        </div>
+        
+        <div class="zoomImage parent">
+          <div class="image">
+              <a href="https://project2-movieapp-express.herokuapp.com/" class="child parent">
+                <img src="images/movie-app.png" class="portfolio-piece child" id="project02" />
+              </a>
+          </div>
+          <div class="overlay overlayBottom">
+              <div class="text">
+                <p>Movie App</p>
+                <hr>
+                <p>Node Express SQL Materialize</p>
+              </div>
+          </div>
         </div>
         <div class="zoomImage parent">
-              <img src="images/movie-app.png" class="portfolio-piece child" id="project02" />
+          <div class="image">
+              <a href="https://punch-card.herokuapp.com/" class="child parent"><img src="images/punchcard-app.png" class="portfolio-piece child" id="project03" /></a>
+          </div>
+          <div class="overlay overlayBottom">
+              <div class="text">
+                <p>Punch Card App</p>
+                <hr>
+                <p>MongoDB Express React Node</p>
+              </div>
+          </div>
         </div>
         <div class="zoomImage parent">
-              <img src="images/punchcard-app.png" class="portfolio-piece child" id="project03" />
+          <div class="image">
+            <a href="https://spadejac000.github.io/form-project/" class="child parent"><img src="images/form.png" class="portfolio-piece child" id="project04" /></a>
+          </div>
+          <div class="overlay overlayBottom">
+              <div class="text">
+                <p>Form</p>
+                <hr>
+                <p>HTML CSS</p>
+              </div>
+          </div>
         </div>
         <div class="zoomImage parent">
-            <img src="images/form.png" class="portfolio-piece child" id="project04" />
+          <div class="image">
+            <a href="https://spadejac000.github.io/uac-contractors/" class="child parent"><img src="images/uac-contractors.png" class="portfolio-piece child" id="project05" /></a>
+          </div>
+          <div class="overlay overlayBottom">
+              <div class="text">
+                <p>UAC Contractors</p>
+                <hr>
+                <p>HTML CSS Bootstrap</p>
+              </div>
+          </div>
         </div>
         <div class="zoomImage parent">
-            <img src="images/uac-contractors.png" class="portfolio-piece child" id="project05" />
+          <div class="image">
+            <a href="https://spadejac000.github.io/quote-generator/" class="child parent"><img src="images/quote-generator.png" class="portfolio-piece child" id="project06" /></a>
+          </div>
+          <div class="overlay overlayBottom">
+              <div class="text">
+                <p>Quote Generator</p>
+                <hr>
+                <p>HTML CSS JavaScript</p>
+              </div>
+          </div>
         </div>
         <div class="zoomImage parent">
-            <img src="images/quote-generator.png" class="portfolio-piece child" id="project06" />
+          <div class="image">
+            <a href="https://spadejac000.github.io/photo-gallery/" class="child parent"><img src="images/photo-gallery.png" class="portfolio-piece child" id="project07" /></a>
+          </div>
+          <div class="overlay overlayBottom">
+              <div class="text">
+                <p>Photo Gallery</p>
+                <hr>
+                <p>HTML CSS JQuery</p>
+              </div>
+          </div>
         </div>
         <div class="zoomImage parent">
-            <img src="images/photo-gallery.png" class="portfolio-piece child" id="project07" />
+          <div class="image">
+            <a href="https://spadejac000.github.io/responsive-design-project" class="child parent"><img src="images/responsive.png" class="portfolio-piece child" id="project08" /></a>
+          </div>
+          <div class="overlay overlayBottom">
+              <div class="text">
+                <p>Resonsive Design</p>
+                <hr>
+                <p>HTML CSS</p>
+              </div>
+          </div>
         </div>
         <div class="zoomImage parent">
-            <img src="images/responsive.png" class="portfolio-piece child" id="project08" />
-        </div>
-        <div class="zoomImage parent">
-            <img src="images/membership.png" class="portfolio-piece child" id="project09" />
+          <div class="image">
+            <a href="https://spadejac000.github.io/Bootstrap/" class="child parent"><img src="images/membership.png" class="portfolio-piece child" id="project09" /></a>
+          </div>
+          <div class="overlay overlayBottom">
+              <div class="text">
+                <p>Membership Site</p>
+                <hr>
+                <p>HTML CSS Bootstrap</p>
+              </div>
+          </div>
         </div>
       </div>
       
@@ -133,16 +223,16 @@
             <h5 class="white-text">Contact Information</h5>
             <ul class="social-media">
               <li><a class="grey-text text-lighten-3" href="https://github.com/spadejac000" target="_blank"><i class="fab fa-github"></i><p>Github</p></a></li>
-              <li><a class="grey-text text-lighten-3" href="#!" target="_blank"><i class="fab fa-linkedin"></i><p>Linkedin</p></a></li>
-              <li><a class="grey-text text-lighten-3" href="#!" target="_blank"><i class="fas fa-envelope"></i><p>Email</p></a></li>
-              <li><a class="grey-text text-lighten-3" href="#!" target="_blank"><i class="fas fa-file-alt"></i><p>Resume</p></a></li>
+              <li><a class="grey-text text-lighten-3" href="https://www.linkedin.com/in/jacob-spade/" target="_blank"><i class="fab fa-linkedin"></i><p>Linkedin</p></a></li>
+              <li><a class="grey-text text-lighten-3" href="mailto:spade.jacob@yahoo.com" target="_blank"><i class="fas fa-envelope"></i><p>Email</p></a></li>
+              <li><a class="grey-text text-lighten-3" href="pdf/resume.pdf" target="_blank"><i class="fas fa-file-alt"></i><p>Resume</p></a></li>
             </ul>
         </div>
       </div>
       <div class="footer-copyright">
         <div class="container">
         © 2018
-        <a class="grey-text text-lighten-4 right home" href="#home">Top</a>
+        <a class="grey-text text-lighten-4 right home top-link" href="#home">Top</a>
         </div>
       </div>
     </footer>
