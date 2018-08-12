@@ -97,6 +97,11 @@
   transition: color 1s ease 0s;
 }
 
+.top-social-media {
+  margin: 0 auto;
+  text-align: center;
+}
+
 .svg {
   width: 8em;
   height: 8em;

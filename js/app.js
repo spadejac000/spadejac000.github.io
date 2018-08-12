@@ -16,44 +16,65 @@ $(document).ready(function() {
         // build a scene
         var ourScene = new ScrollMagic.Scene({
           triggerElement: '#project01',
-          triggerHook: 0.9
+          triggerHook: 0.8
         })
         .setClassToggle('#project01', 'fade-in')
         .addTo(controller);
 
         var ourScene = new ScrollMagic.Scene({
           triggerElement: '#project02',
-          triggerHook: 0.9
+          triggerHook: 0.8
         })
         .setClassToggle('#project02', 'fade-in')
         .addTo(controller);
 
         var ourScene = new ScrollMagic.Scene({
           triggerElement: '#project03',
-          triggerHook: 0.9
+          triggerHook: 0.8
         })
         .setClassToggle('#project03', 'fade-in')
         .addTo(controller); 
 
         var ourScene = new ScrollMagic.Scene({
           triggerElement: '#project04',
-          triggerHook: 0.9
+          triggerHook: 0.8
         })
         .setClassToggle('#project04', 'fade-in')
         .addTo(controller); 
 
         var ourScene = new ScrollMagic.Scene({
           triggerElement: '#project05',
-          triggerHook: 0.9
+          triggerHook: 0.8
         })
         .setClassToggle('#project05', 'fade-in')
         .addTo(controller); 
 
         var ourScene = new ScrollMagic.Scene({
           triggerElement: '#project06',
-          triggerHook: 0.9
+          triggerHook: 0.8
         })
         .setClassToggle('#project06', 'fade-in')
+        .addTo(controller); 
+
+        var ourScene = new ScrollMagic.Scene({
+          triggerElement: '#project07',
+          triggerHook: 0.8
+        })
+        .setClassToggle('#project07', 'fade-in')
+        .addTo(controller); 
+
+        var ourScene = new ScrollMagic.Scene({
+          triggerElement: '#project08',
+          triggerHook: 0.8
+        })
+        .setClassToggle('#project08', 'fade-in')
+        .addTo(controller); 
+
+        var ourScene = new ScrollMagic.Scene({
+          triggerElement: '#project09',
+          triggerHook: 0.8
+        })
+        .setClassToggle('#project09', 'fade-in')
         .addTo(controller); 
 });
 
