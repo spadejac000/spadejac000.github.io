@@ -13,11 +13,6 @@ $(document).ready(function() {
         // init ScrollMagic
         var controller = new ScrollMagic.Controller();
 
-        // var projects = [
-        //   '#project01',
-        //   '#project02',
-        //   '#project03'
-        // ]
         // build a scene
         var ourScene = new ScrollMagic.Scene({
           triggerElement: '#project01'
@@ -35,6 +30,24 @@ $(document).ready(function() {
           triggerElement: '#project03'
         })
         .setClassToggle('#project03', 'fade-in')
+        .addTo(controller); 
+
+        var ourScene = new ScrollMagic.Scene({
+          triggerElement: '#project04'
+        })
+        .setClassToggle('#project04', 'fade-in')
+        .addTo(controller); 
+
+        var ourScene = new ScrollMagic.Scene({
+          triggerElement: '#project05'
+        })
+        .setClassToggle('#project05', 'fade-in')
+        .addTo(controller); 
+
+        var ourScene = new ScrollMagic.Scene({
+          triggerElement: '#project06'
+        })
+        .setClassToggle('#project06', 'fade-in')
         .addTo(controller); 
 });
 

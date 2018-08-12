@@ -7,7 +7,7 @@
 }
 
 .portfolio-piece {
-  width: 33.33333333%;
+  width: 100%;
   padding: 0px;
   opacity: 0;
   transition: all .5s ease-out;
@@ -146,10 +146,50 @@ i:hover {
   display: inline-block;
 }
 
-.logo {
-  width: 3em;
+/* Portfolio Projects */
+
+.zoomImage {
+  overflow: hidden;
+  text-align: center;
 }
 
+img {
+  transition: 0.75s;
+  z-index: 1;
+}
+
+.zoomImage:hover img {
+  transform: scale(1.2);
+  transform-origin: 50% 50%;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+/* Image zoom on hover + Overlay colour */
+.parent {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.child {
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  -o-transition: all .5s;
+  transition: all .5s;
+  justify-content: stretch;
+}
+
+/* Footer */
+
 footer {
-  margin-top: -5px;
+  z-index: 1;
 }
