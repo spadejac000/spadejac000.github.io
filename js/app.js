@@ -15,37 +15,43 @@ $(document).ready(function() {
 
         // build a scene
         var ourScene = new ScrollMagic.Scene({
-          triggerElement: '#project01'
+          triggerElement: '#project01',
+          triggerHook: 0.9
         })
         .setClassToggle('#project01', 'fade-in')
         .addTo(controller);
 
         var ourScene = new ScrollMagic.Scene({
-          triggerElement: '#project02'
+          triggerElement: '#project02',
+          triggerHook: 0.9
         })
         .setClassToggle('#project02', 'fade-in')
         .addTo(controller);
 
         var ourScene = new ScrollMagic.Scene({
-          triggerElement: '#project03'
+          triggerElement: '#project03',
+          triggerHook: 0.9
         })
         .setClassToggle('#project03', 'fade-in')
         .addTo(controller); 
 
         var ourScene = new ScrollMagic.Scene({
-          triggerElement: '#project04'
+          triggerElement: '#project04',
+          triggerHook: 0.9
         })
         .setClassToggle('#project04', 'fade-in')
         .addTo(controller); 
 
         var ourScene = new ScrollMagic.Scene({
-          triggerElement: '#project05'
+          triggerElement: '#project05',
+          triggerHook: 0.9
         })
         .setClassToggle('#project05', 'fade-in')
         .addTo(controller); 
 
         var ourScene = new ScrollMagic.Scene({
-          triggerElement: '#project06'
+          triggerElement: '#project06',
+          triggerHook: 0.9
         })
         .setClassToggle('#project06', 'fade-in')
         .addTo(controller); 
