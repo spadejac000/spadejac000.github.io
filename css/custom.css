@@ -97,9 +97,29 @@
   transition: color 1s ease 0s;
 }
 
+/* top text area */
+
+.txt-type > .txt {
+  border-right: 0.2rem solid #777;
+}
+
+/* top social media */
+
 .top-social-media {
   margin: 0 auto;
   text-align: center;
+}
+
+.top-github:hover {
+  transform: rotate(15deg);
+}
+
+.top-linkedin:hover {
+  transform: rotate(-15deg);
+}
+
+.top-email:hover {
+  transform: rotate(15deg);
 }
 
 .svg {
@@ -126,6 +146,10 @@
 .profile_picture {
   width: 70%;
   box-shadow: 2px 2px 2px black;
+}
+
+.profile_picture:hover {
+  transform: rotate(3deg);
 }
 
 .about {
@@ -156,6 +180,12 @@ i:hover,
 
 .social-media li {
   display: inline-block;
+}
+
+/* skills */
+
+.skill-pic:hover {
+  transform: scale(1.5);
 }
 
 /* Portfolio Projects */
@@ -246,6 +276,24 @@ img {
 
 footer {
   z-index: 1;
+}
+
+/* bottom social media */
+
+.bottom-github:hover {
+  transform: rotate(15deg);
+}
+
+.bottom-linkedin:hover {
+  transform: rotate(-15deg);
+}
+
+.bottom-email:hover {
+  transform: rotate(15deg);
+}
+
+.bottom-resume:hover {
+  transform: rotate(-15deg);
 }
 
 @media (max-width: 600px) {
