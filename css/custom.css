@@ -97,6 +97,12 @@
   transition: color 1s ease 0s;
 }
 
+/* general themes */
+
+.underlines {
+  width: 50%;
+}
+
 /* top text area */
 
 .txt-type > .txt {
