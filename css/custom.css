@@ -340,4 +340,17 @@ ul.social-media {
     width: 100%;
   }
 
+  .about {
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  .bio {
+    margin-top: 32px;
+  }
+
+  .underlines {
+    width: 100%;
+  }
+
 }
