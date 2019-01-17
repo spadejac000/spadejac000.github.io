@@ -110,7 +110,7 @@
 /* general themes */
 
 .underlines {
-  width: 50%;
+  width: 555px;
 }
 
 /* top text area */
@@ -138,23 +138,6 @@
   transform: rotate(15deg);
 }
 
-.svg {
-  width: 8em;
-  height: 8em;
-}
-
-.html-svg {
-  width: 11em;
-}
-
-.css-svg {
-  width: 6em;
-}
-
-.react-svg {
-  width: 10em;
-}
-
 .fab, .fas {
   width: 2em;
 }
@@ -164,18 +147,9 @@
   box-shadow: 2px 2px 2px black;
 }
 
-.profile_picture:hover {
-  transform: rotate(3deg);
-}
-
-.about {
-  margin-bottom: 3em;
-}
-
 .skills {
   display: block;
   clear: both;
-  margin-bottom: 1em;
 }
 
 i {
@@ -194,14 +168,21 @@ i:hover,
   transition: all 1s ease;
 }
 
+.top-link {
+  float: right;
+}
+
 .social-media li {
   display: inline-block;
 }
 
 /* skills */
+.skill-pic {
+  font-size: 32px;
+}
 
 .skill-pic:hover {
-  transform: scale(1.5);
+  transform: scale(1.1);
 }
 
 /* Portfolio Projects */
@@ -302,6 +283,10 @@ footer {
 }
 
 /* bottom social media */
+
+ul.social-media {
+  padding-left: 0;
+}
 
 .bottom-github:hover {
   transform: rotate(15deg);

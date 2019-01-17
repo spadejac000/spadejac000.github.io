@@ -35,7 +35,7 @@
 
     <div class="banner">
       <div class="title">
-          <h1><span class="txt-type" data-wait="3000" data-words='["Front End Web Developer", "Website Designer", "Website Creator"]'></span></h1>
+          <h1 class="mb-5"><span class="txt-type" data-wait="3000" data-words='["Front End Web Developer", "Website Designer", "Website Creator"]'></span></h1>
       </div>
       <div class="top-social-media">
         <ul class="social-media">
@@ -46,44 +46,93 @@
       </div>
     </div>
     
-
-    <div class="white container">
-      <h1 class="text-center mt-5" id="about">About</h1>
-      <hr class="underlines bg-primary mb-5">
-      <div class="row">
-         <div class="col-lg-4 col-sm-12 col-md-6  about">
-           <img src="images/profile_picture.jpeg" class="profile_picture"/>
-         </div>
-         <div class="col-lg-8 col-sm-12 col-md-6">
-           <h5>
-             <strong>
-               Hi! Welcome to my website. My name is Jacob Spade and I am a full-stack web developer.
-
-              </br>
-              </br>
-              In this day and age it is essential to have an online presence as a business owner. An online presence gives your customers greater accessability to your product or service. If you are looking to have your own website for your business, I can help you make that happen. I have in depth experience with creating a strong user experience, setting up user authenication, and working with databases. Feel free to email me anytime.
-             </strong>
-           </h5>
-         </div>
-        </div>
-
-       <h2 class="text-center skills">Skills</h2>
-
-         <div class="row">
-           <div class="col s6 m6 l3 text-center"><img class="skill-pic svg html-svg" src="images/html-svg.png"></div>
-           <div class="col s6 m6 l3 text-center"><img class="skill-pic svg css-svg" src="images/css-svg.png"></div>
-           <div class="col s6 m6 l3 text-center"><img class="skill-pic svg" src="images/js-svg.png"></div>
-           <div class="col s6 m6 l3 text-center"><img class="skill-pic svg react-svg" src="images/react-svg.png"></div>
-         </div>
-         <div class="row">
-           <div class="col s6 m6 l3 text-center"><img class="skill-pic svg" src="images/mongodb-svg.png"></div>
-           <div class="col s6 m6 l3 text-center"><img class="skill-pic svg" src="images/express-svg.png"></div>
-           <div class="col s6 m6 l3 text-center"><img class="skill-pic svg" src="images/node-svg.jpg"></div>
-           <div class="col s6 m6 l3 text-center"><img class="skill-pic svg" src="images/bootstrap-svg.png"></div>
-         </div>
+    <div class="bg-light pt-5 pb-5">
+      <div class="white container">
+          <h1 class="text-center mb-3" id="about">About</h1>
+          <hr class="underlines bg-primary mb-5">
+          <div class="row">
+            <div class="col-lg-4 col-sm-12 col-md-6  about">
+              <img src="images/profile_picture.jpeg" class="profile_picture"/>
+            </div>
+            <div class="col-lg-8 col-sm-12 col-md-6">
+              <h5>
+                <p>
+                  <strong>
+                    Hi! Welcome to my website. My name is Jacob Spade and I am a full-stack web developer.
+                  </strong>
+                </p>
+                <p>
+                  <strong>
+                    In this day and age it is essential to have an online presence as a business owner. An online presence gives your customers greater accessability to your product or service. If you are looking to have your own website for your business, I can help you make that happen. I have in depth experience with creating a strong user experience, setting up user authenication, and working with databases. Feel free to email me anytime.
+                  </strong>
+                </p>
+              </h5>
+            </div>
+          </div>
       </div>
-
     </div>
+
+    <!-- Skills Section -->
+
+    <h1 class="text-center skills mt-5">Skills</h1>
+    <hr class="underlines bg-primary">
+
+    <div class="container mt-5">
+      <div class="row mb-5">
+        <div class="col text-center">
+          <div class="skill-pic">
+            <i class="fab fa-html5"></i>
+            <p>HTML</p>
+          </div>
+        </div>
+        <div class="col text-center">
+          <div class="skill-pic">
+            <i class="fab fa-css3"></i>
+            <p>CSS</p>
+          </div>
+        </div>
+        <div class="col text-center">
+          <div class="skill-pic">
+            <i class="fab fa-js-square"></i>
+            <p>JAVASCRIPT</p>
+          </div>
+        </div>
+        <div class="col text-center">
+          <div class="skill-pic">
+            <i class="fab fa-wordpress"></i>
+            <p>WORDPRESS</p>
+          </div>
+        </div>
+      </div>
+      <div class="row mb-5">
+        <div class="col text-center">
+          <div class="skill-pic">
+            <i class="fab fa-react"></i>
+            <p>REACT</p>
+          </div>
+        </div>
+        <div class="col text-center">
+          <div class="skill-pic">
+            <i class="fab fa-node-js"></i>
+            <p>NODEJS</p>
+          </div>
+        </div>
+        <div class="col text-center">
+          <div class="skill-pic">
+            <i class="fas fa-database"></i>
+            <p>MONGODB</p>
+          </div>
+        </div>
+        <div class="col text-center">
+          <div class="skill-pic">
+            <i class="fab fa-git-square"></i>
+            <p>GIT</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Projects Section -->
     
     <h1 class="text-center" id="projects">Projects</h1>
     <div class="grid">
@@ -168,7 +217,7 @@
     </div>
 
     <!-- testimonial carousel -->
-    <div class="bg-light pt-5">
+    <div class="bg-light pt-5 testimonial-carsousel">
       <h1 class="text-center">Client Testimonials</h1>
       <hr class="underlines bg-primary">
       <div id="carouselExampleIndicators" class="carousel slide container" data-ride="carousel">
@@ -212,10 +261,10 @@
       </div>
     </div>
 
-    <footer class="page-footer bg-primary text-light pt-5" id="contact">
+    <footer class="page-footer bg-primary text-light pt-5 pb-2" id="contact">
       <div class="container">
-        <div class="row text-center">
-            <h5 class="white-text">Contact Information</h5>
+        <div class="text-center">
+            <h5 class="white-text mb-3">Contact Information</h5>
             <ul class="social-media">
               <li><a class="grey-text text-light" href="https://github.com/spadejac000" target="_blank"><i class="fab fa-github bottom-github"></i><p>Github</p></a></li>
               <li><a class="grey-text text-light" href="https://www.linkedin.com/in/jacob-spade/" target="_blank"><i class="fab fa-linkedin bottom-linkedin"></i><p>Linkedin</p></a></li>
