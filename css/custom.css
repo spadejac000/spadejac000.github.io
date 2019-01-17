@@ -1,9 +1,22 @@
+body {
+
+}
+
 .title {
   padding-top: 240px;
   z-index: 1000;
   font-size: 3em;
   text-align: center;
   color: white;
+  width: 500px;
+  margin: 0 auto;
+  padding-bottom: 16px;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, .7);
+  width: 500px;
+  padding: 16px 0;
 }
 
 .portfolio-piece {
@@ -29,6 +42,8 @@
 .banner {
   background-image: url('https://png.pngtree.com/thumb_back/fw800/back_pic/03/79/87/8057c2f33cc1d31.jpg');
   height: 500px;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .header-image {
@@ -124,6 +139,10 @@
 .top-social-media {
   margin: 0 auto;
   text-align: center;
+  color: white;
+  background-color: rgba(0, 0, 0, .7);
+  width: 500px;
+  padding: 16px 0;
 }
 
 .top-github:hover {
@@ -172,6 +191,10 @@ i:hover,
   float: right;
 }
 
+ul.social-media {
+  margin-bottom: 0;
+}
+
 .social-media li {
   display: inline-block;
 }
@@ -214,15 +237,7 @@ img {
   z-index: 5;
 }
 
-.overlay {
-  position: absolute;
-  transition: all .7s ease;
-  opacity: 0;
-  background-color: black;
-  z-index: 5;
-}
-
-.zoomImage:hover .overlay {
+.zoomImage:hover {
   opacity: .7;
   z-index: 5;
 }
