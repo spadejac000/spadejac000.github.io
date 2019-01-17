@@ -202,6 +202,10 @@ ul.social-media {
   font-size: 32px;
 }
 
+.skill-row {
+  margin-bottom: 32px;
+}
+
 .skill-pic:hover {
   transform: scale(1.1);
 }
@@ -351,6 +355,15 @@ ul.social-media {
 
   .underlines {
     width: 100%;
+  }
+
+  /* skills */
+  .skill-pic {
+    font-size: 44px;
+  }
+
+  .skill-row {
+    margin-bottom: 0;
   }
 
 }
