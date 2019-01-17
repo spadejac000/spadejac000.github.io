@@ -14,36 +14,26 @@
   </head>
   <body id="home">
 
-
-
-
-    <div class="parallax-container">
-      <div class="navbar-fixed">
-        <nav class="navbar">
-
-          <div class="nav-wrapper">
-            <div class="container">
-              <a href="#home" class="brand-logo">Jacob Spade</a>
-              <a href="#home" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-              <ul id="nav-mobile" class="right hide-on-med-and-down">
-                <li><a href="#home" class="home">Home</a></li>
-                <li><a href="#about" class="about">About</a></li>
-                <li><a href="#projects" class="projects">Projects</a></li>
-                <li><a href="#contact" class="contact">Contact</a></li>
-                <li><a href="pdf/resume.pdf" class="resume">Resume</a></li>
-              </ul>
-            </div> 
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">Jacob Spade</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link" href="#home">Home</a>
+            <a class="nav-item nav-link" href="#about">About</a>
+            <a class="nav-item nav-link" href="#projects">Projects</a>
+            <a class="nav-item nav-link" href="#contact">Contact</a>
+            <a href="pdf/resume.pdf" class="nav-item nav-link" target="_blank">Resume</a>
           </div>
-        </nav>
+        </div>
       </div>
-      <ul class="sidenav sidenav-close" id="mobile-demo">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="pdf/resume.pdf">Resume</a></li>
-      </ul>
+    </nav>
 
+    <div class="banner">
       <div class="title">
           <h1><span class="txt-type" data-wait="3000" data-words='["Front End Web Developer", "Website Designer", "Website Creator"]'></span></h1>
       </div>
@@ -54,18 +44,17 @@
           <li><a class="grey-text text-lighten-3" href="mailto:spade.jacob@yahoo.com"><i class="fas fa-envelope top-email"></i></a></li>
         </ul>
       </div>
-      <div class="parallax header-image"> 
-        <img src="images/computer-background02.jpg">
-      </div>
     </div>
+    
+
     <div class="white container">
-      <h1 class="center-align" id="about">About</h1>
+      <h1 class="text-center mt-5" id="about">About</h1>
+      <hr class="underlines bg-primary mb-5">
       <div class="row">
-        <div class="">
-         <div class="col s12 m6 about">
+         <div class="col-lg-4 col-sm-12 col-md-6  about">
            <img src="images/profile_picture.jpeg" class="profile_picture"/>
          </div>
-         <div class="col s12 m6">
+         <div class="col-lg-8 col-sm-12 col-md-6">
            <h5>
              <strong>
                Hi! Welcome to my website. My name is Jacob Spade and I am a full-stack web developer.
@@ -78,32 +67,29 @@
          </div>
         </div>
 
-       <h2 class="center-align skills">Skills</h2>
+       <h2 class="text-center skills">Skills</h2>
 
          <div class="row">
-           <div class="col s6 m6 l3 center-align"><img class="skill-pic svg html-svg" src="images/html-svg.png"></div>
-           <div class="col s6 m6 l3 center-align"><img class="skill-pic svg css-svg" src="images/css-svg.png"></div>
-           <div class="col s6 m6 l3 center-align"><img class="skill-pic svg" src="images/js-svg.png"></div>
-           <div class="col s6 m6 l3 center-align"><img class="skill-pic svg react-svg" src="images/react-svg.png"></div>
+           <div class="col s6 m6 l3 text-center"><img class="skill-pic svg html-svg" src="images/html-svg.png"></div>
+           <div class="col s6 m6 l3 text-center"><img class="skill-pic svg css-svg" src="images/css-svg.png"></div>
+           <div class="col s6 m6 l3 text-center"><img class="skill-pic svg" src="images/js-svg.png"></div>
+           <div class="col s6 m6 l3 text-center"><img class="skill-pic svg react-svg" src="images/react-svg.png"></div>
          </div>
          <div class="row">
-           <div class="col s6 m6 l3 center-align"><img class="skill-pic svg" src="images/mongodb-svg.png"></div>
-           <div class="col s6 m6 l3 center-align"><img class="skill-pic svg" src="images/express-svg.png"></div>
-           <div class="col s6 m6 l3 center-align"><img class="skill-pic svg" src="images/node-svg.jpg"></div>
-           <div class="col s6 m6 l3 center-align"><img class="skill-pic svg" src="images/bootstrap-svg.png"></div>
+           <div class="col s6 m6 l3 text-center"><img class="skill-pic svg" src="images/mongodb-svg.png"></div>
+           <div class="col s6 m6 l3 text-center"><img class="skill-pic svg" src="images/express-svg.png"></div>
+           <div class="col s6 m6 l3 text-center"><img class="skill-pic svg" src="images/node-svg.jpg"></div>
+           <div class="col s6 m6 l3 text-center"><img class="skill-pic svg" src="images/bootstrap-svg.png"></div>
          </div>
       </div>
 
     </div>
-    <div class="parallax-container">
-      <div class="parallax"><img src="images/computer-background.jpg"></div>
-    </div>
     
-    <h1 class="center-align" id="projects">Projects</h1>
+    <h1 class="text-center" id="projects">Projects</h1>
     <div class="grid">
       <div class="zoomImage parent">
         <div class="image">
-          <a href="https://spadejac000.github.io/project1/" class="child parent ">
+          <a href="https://spadejac000.github.io/project1/" class="child parent" target="_blank">
             <img src="images/blackjack.png" class="portfolio-piece child" id="project01" />
           </a>
         </div>
@@ -118,7 +104,7 @@
       
       <div class="zoomImage parent">
         <div class="image">
-            <a href="https://project2-movieapp-express.herokuapp.com/" class="child parent">
+            <a href="https://project2-movieapp-express.herokuapp.com/" class="child parent" target="_blank">
               <img src="images/movie-app.png" class="portfolio-piece child" id="project02" />
             </a>
         </div>
@@ -132,7 +118,7 @@
       </div>
       <div class="zoomImage parent">
         <div class="image">
-            <a href="https://punch-card.herokuapp.com/" class="child parent"><img src="images/punchcard-app.png" class="portfolio-piece child" id="project03" /></a>
+            <a href="https://punch-card.herokuapp.com/" class="child parent" target="_blank"><img src="images/punchcard-app.png" class="portfolio-piece child" id="project03" /></a>
         </div>
         <div class="overlay overlayBottom">
             <div class="text">
@@ -144,7 +130,7 @@
       </div>
       <div class="zoomImage parent">
         <div class="image">
-          <a href="https://good-market.herokuapp.com/" class="child parent"><img src="images/goodmarket.png" class="portfolio-piece child" id="project04" /></a>
+          <a href="https://good-market.herokuapp.com/" class="child parent" target="_blank"><img src="images/goodmarket.png" class="portfolio-piece child" id="project04" /></a>
         </div>
         <div class="overlay overlayBottom">
             <div class="text">
@@ -156,7 +142,7 @@
       </div>
       <div class="zoomImage parent">
         <div class="image">
-          <a href="https://spadejac000.github.io/uac-contractors/" class="child parent"><img src="images/uac-contractors.png" class="portfolio-piece child" id="project05" /></a>
+          <a href="https://spadejac000.github.io/uac-contractors/" class="child parent" target="_blank"><img src="images/uac-contractors.png" class="portfolio-piece child" id="project05" /></a>
         </div>
         <div class="overlay overlayBottom">
             <div class="text">
@@ -169,13 +155,13 @@
       
       <div class="zoomImage parent">
         <div class="image">
-          <a href="https://spadejac000.github.io/photo-gallery/" class="child parent"><img src="images/photo-gallery.png" class="portfolio-piece child" id="project07" /></a>
+          <a href="http://www.openmindtutoringcompany.com/" class="child parent" target="_blank"><img src="images/openmindtutoring.png" class="portfolio-piece child" id="project07" /></a>
         </div>
         <div class="overlay overlayBottom">
             <div class="text">
-              <p>Photo Gallery</p>
+              <p>Open Mind Tutoring</p>
               <hr>
-              <p>HTML CSS JQuery</p>
+              <p>WordPress</p>
             </div>
         </div>
       </div>
@@ -184,8 +170,8 @@
     <!-- testimonial carousel -->
     <div class="bg-light pt-5">
       <h1 class="text-center">Client Testimonials</h1>
-      <hr class="underlines">
-      <div id="carouselExampleIndicators" class="carousel slide container mb-5" data-ride="carousel">
+      <hr class="underlines bg-primary">
+      <div id="carouselExampleIndicators" class="carousel slide container" data-ride="carousel">
         <ol class="carousel-indicators">
           <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active bg-primary"></li>
           <li data-target="#carouselExampleIndicators" data-slide-to="1" class="bg-primary"></li>
@@ -200,7 +186,7 @@
           </div>
           <div class="carousel-item">
             <p class="text-center">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus repudiandae velit fuga? Quia temporibus autem eaque sapiente, id necessitatibus molestiae sed aliquid nemo nihil non voluptatem molestias est labore voluptate.
+              "Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus repudiandae velit fuga? Quia temporibus autem eaque sapiente, id necessitatibus molestiae sed aliquid nemo nihil non voluptatem molestias est labore voluptate."
             </p>
             <p class="text-center mb-5">
               -Lorem Ipsum
@@ -208,40 +194,40 @@
           </div>
           <div class="carousel-item">
             <p class="text-center">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur quasi expedita optio dolorem labore? Quod saepe laborum asperiores blanditiis veniam eveniet illum reprehenderit illo quidem ratione, possimus modi autem atque.
+              "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur quasi expedita optio dolorem labore? Quod saepe laborum asperiores blanditiis veniam eveniet illum reprehenderit illo quidem ratione, possimus modi autem atque."
             </p>
             <p class="text-center mb-5">
               -Blank
             </p>
           </div>
         </div>
-        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <a class="carousel-control-prev pb-5" href="#carouselExampleIndicators" role="button" data-slide="prev">
           <span class="carousel-control-prev-icon bg-primary" aria-hidden="true"></span>
           <span class="sr-only">Previous</span>
         </a>
-        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <a class="carousel-control-next pb-5" href="#carouselExampleIndicators" role="button" data-slide="next">
           <span class="carousel-control-next-icon bg-primary" aria-hidden="true"></span>
           <span class="sr-only">Next</span>
         </a>
       </div>
     </div>
 
-    <footer class="page-footer grey darken-3" id="contact">
+    <footer class="page-footer bg-primary text-light pt-5" id="contact">
       <div class="container">
-        <div class="row center-align">
+        <div class="row text-center">
             <h5 class="white-text">Contact Information</h5>
             <ul class="social-media">
-              <li><a class="grey-text text-lighten-3" href="https://github.com/spadejac000" target="_blank"><i class="fab fa-github bottom-github"></i><p>Github</p></a></li>
-              <li><a class="grey-text text-lighten-3" href="https://www.linkedin.com/in/jacob-spade/" target="_blank"><i class="fab fa-linkedin bottom-linkedin"></i><p>Linkedin</p></a></li>
-              <li><a class="grey-text text-lighten-3" href="mailto:spade.jacob@yahoo.com" target="_blank"><i class="fas fa-envelope bottom-email"></i><p>Email</p></a></li>
-              <li><a class="grey-text text-lighten-3" href="pdf/resume.pdf" target="_blank"><i class="fas fa-file-alt bottom-resume"></i><p>Resume</p></a></li>
+              <li><a class="grey-text text-light" href="https://github.com/spadejac000" target="_blank"><i class="fab fa-github bottom-github"></i><p>Github</p></a></li>
+              <li><a class="grey-text text-light" href="https://www.linkedin.com/in/jacob-spade/" target="_blank"><i class="fab fa-linkedin bottom-linkedin"></i><p>Linkedin</p></a></li>
+              <li><a class="grey-text text-light" href="mailto:spade.jacob@yahoo.com" target="_blank"><i class="fas fa-envelope bottom-email"></i><p>Email</p></a></li>
+              <li><a class="grey-text text-light" href="pdf/resume.pdf" target="_blank"><i class="fas fa-file-alt bottom-resume"></i><p>Resume</p></a></li>
             </ul>
         </div>
       </div>
       <div class="footer-copyright">
         <div class="container">
-        © 2018
-        <a class="grey-text text-lighten-4 right home top-link" href="#home">Top</a>
+        © 2019 Jacob Spade
+        <a class="grey-text text-light right home top-link" href="#home">Top</a>
         </div>
       </div>
     </footer>

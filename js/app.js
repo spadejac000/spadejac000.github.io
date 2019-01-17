@@ -9,12 +9,6 @@ $(document).ready(function() {
           }
         });
 
-        // parallax
-        $('.parallax').parallax();
-        
-        // sidenav
-        $('.sidenav').sidenav();
-
         // init ScrollMagic
         var controller = new ScrollMagic.Controller();
 

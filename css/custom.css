@@ -1,5 +1,5 @@
 .title {
-  margin-top: 3em;
+  padding-top: 240px;
   z-index: 1000;
   font-size: 3em;
   text-align: center;
@@ -23,6 +23,12 @@
   z-index: 100;
   transition: background-color 1s ease 0s;
   box-shadow: none;
+}
+
+/* banner */
+.banner {
+  background-image: url('/Users/jacobspade/code/portfolio/spadejac000.github.io/images/computer-background02.jpg');
+  height: 500px;
 }
 
 .header-image {
@@ -89,12 +95,16 @@
   box-shadow: 0 2px 4px black;
 }
 .navbar.solid .navbar-brand {
-  color: #C57ED3;
   transition: color 1s ease 0s;
 }
 .navbar.solid .navbar-nav > li > a {
   color: #C57ED3;
   transition: color 1s ease 0s;
+}
+
+/* bootstrap navbar styles */
+#navbarNavAltMarkup {
+  justify-content: flex-end;
 }
 
 /* general themes */
@@ -276,6 +286,13 @@ img {
   -o-transition: all .5s;
   transition: all .5s;
   justify-content: stretch;
+}
+
+/* Carousel Testimonials */
+
+.carousel-inner {
+  width: 70%;
+  margin: 0 auto;
 }
 
 /* Footer */
