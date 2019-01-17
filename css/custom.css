@@ -140,7 +140,7 @@ body {
   color: white;
   background-color: rgba(0, 0, 0, .5);
   width: 500px;
-  padding: 16px 0;
+  padding: 0 0 16px 0;
 }
 
 .top-github:hover {
@@ -365,5 +365,16 @@ ul.social-media {
   .skill-row {
     margin-bottom: 0;
   }
+
+  .title,
+  .top-social-media {
+    width: 300px;
+  }
+
+  /* top text area mobile-view */
+  .typing-txt {
+    font-size: 24px;
+  }
+
 
 }
