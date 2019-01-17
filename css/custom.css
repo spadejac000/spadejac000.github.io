@@ -10,12 +10,10 @@ body {
   color: white;
   width: 500px;
   margin: 0 auto;
-  padding-bottom: 16px;
 }
 
-.overlay {
-  background-color: rgba(0, 0, 0, .7);
-  width: 500px;
+.top-overlay {
+  background-color: rgba(0, 0, 0, .5);
   padding: 16px 0;
 }
 
@@ -140,7 +138,7 @@ body {
   margin: 0 auto;
   text-align: center;
   color: white;
-  background-color: rgba(0, 0, 0, .7);
+  background-color: rgba(0, 0, 0, .5);
   width: 500px;
   padding: 16px 0;
 }
@@ -237,7 +235,15 @@ img {
   z-index: 5;
 }
 
-.zoomImage:hover {
+.overlay {
+  position: absolute;
+  transition: all .7s ease;
+  opacity: 0;
+  background-color: black;
+  z-index: 5;
+}
+
+.zoomImage:hover .overlay {
   opacity: .7;
   z-index: 5;
 }
