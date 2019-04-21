@@ -128,6 +128,13 @@ nav > ul > li > a:hover {
 
 /* top social media */
 
+.top-github,
+.top-linkedin,
+.top-email {
+  font-size: 28px;
+  width: 32px;
+}
+
 .top-social-media {
   margin: 0 auto;
   text-align: center;
@@ -149,22 +156,20 @@ nav > ul > li > a:hover {
   transform: rotate(15deg);
 }
 
-.fab, .fas {
-  width: 2em;
-}
-
 .profile_picture {
   width: 70%;
   box-shadow: 2px 2px 2px black;
 }
+
+/* SKILLS */
 
 .skills {
   display: block;
   clear: both;
 }
 
-i {
-  font-size: 2em;
+.skill-pic > i {
+  font-size: 100px;
 }
 
 i:hover,
@@ -181,6 +186,11 @@ i:hover,
 
 .top-link {
   float: right;
+  color: white;
+  background-color: #262626;
+  text-align: center;
+  border-radius: 3px;
+  width: 32px;
 }
 
 ul.social-media {
@@ -302,6 +312,13 @@ footer {
 }
 
 /* bottom social media */
+
+.bottom-github,
+.bottom-linkedin,
+.bottom-email,
+.bottom-resume {
+  font-size: 32px;
+}
 
 ul.social-media {
   padding-left: 0;
