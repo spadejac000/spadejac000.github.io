@@ -1,13 +1,4 @@
 $(document).ready(function() {
-        // Transition effect for navbar
-        $(window).scroll(function() {
-          // checks if window is scrolled more than 500px, adds/removes solid class
-          if($(this).scrollTop() > 100) {
-              $('.navbar').addClass('solid');
-          } else {
-              $('.navbar').removeClass('solid');
-          }
-        });
 
         // init ScrollMagic
         var controller = new ScrollMagic.Controller();
@@ -157,3 +148,12 @@ function init() {
   // Init Typewriter
   new TypeWriter(txtElement, words, wait);
 }
+
+// navbar scrolling
+$(window).on('scroll', () => {
+  if($(window).scrollTop()) {
+    $('nav').addClass('black');
+  } else {
+    $('nav').removeClass('black');
+  }
+})
