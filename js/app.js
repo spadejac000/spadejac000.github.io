@@ -151,11 +151,18 @@ function init() {
 
 // navbar scrolling
 $(window).on('scroll', () => {
-  if($(window).scrollTop()) {
-    $('nav').addClass('black');
-  } else {
-    $('nav').removeClass('black');
-  }
+  if($(window).width() > 600) {
+    if($(window).scrollTop()) {
+      $('nav').addClass('black');
+    } else {
+      $('nav').removeClass('black');
+    }
+  } 
+})
+
+// hamburger menu functionality
+$('.fa-bars').on('click', () => {
+  $('.mobile-menu').slideToggle();
 })
 
   

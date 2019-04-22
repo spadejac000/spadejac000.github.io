@@ -47,7 +47,7 @@ body {
 }
 
 .header-image {
-  margin-top: -100px;
+  /* margin-top: -100px; */
   width: 100%;
 }
 
@@ -58,7 +58,7 @@ body {
 
 /* navbar styling */
 
-nav {
+.desktop-nav {
   position: fixed;
   top: 0;
   left: 0;
@@ -78,7 +78,7 @@ nav.black {
   z-index: 1001;
 }
 
-nav > .logo > img {
+.desktop-nav > .logo > img {
   height: 80px;
   transition: .5s;
 }
@@ -87,17 +87,17 @@ nav.black > .logo > img {
   height: 60px;
 }
 
-nav > ul {
+.desktop-nav > ul {
   margin: 0;
   padding: 0;
   display: flex;
 }
 
-nav > ul > li {
+.desktop-nav > ul > li {
   list-style: none;
 }
 
-nav > ul > li > a {
+.desktop-nav > ul > li > a {
   line-height: 80px;
   color: #262626;
   padding: 5px 20px;
@@ -112,11 +112,16 @@ nav.black > ul > li > a {
   line-height: 60px;
 }
 
-nav > ul > li > a.active,
-nav > ul > li > a:hover {
+.desktop-nav > ul > li > a.active,
+.desktop-nav > ul > li > a:hover {
   color: #fff;
   background: #007bff;
   text-decoration: none;
+}
+
+.mobile-nav,
+.mobile-menu {
+  display: none;
 }
 
 /* general themes */
@@ -346,6 +351,72 @@ ul.social-media {
 }
 
 @media (max-width: 600px) {
+
+  .desktop-nav {
+    display: none;
+  }
+
+  .mobile-nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: rgba(0, 0, 0, .8);
+    position: fixed;
+    width: 100%;
+    z-index: 10001;
+  }
+
+  .mobile-nav-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .mobile-nav-middle-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .mobile-nav > .mobile-nav-middle-box > .logo > img {
+    height: 80px;
+  }
+
+  .mobile-nav > .mobile-nav-content > i {
+    color: #f8f8f8;
+    padding: 5px 8px 5px 8px;
+    font-size: 28px;
+    border: 1px solid #f8f8f8;
+    border-radius: 5px;
+  }
+
+  /* mobile menu */
+  .mobile-menu {
+    display: none;
+    background-color: rgba(0, 0, 0, .8);
+    width: 100%;
+    position: fixed;
+    top: 80px;
+    z-index: 10001;
+  }
+
+  .mobile-menu > ul {
+    padding: 0;
+    margin-bottom: 0;
+  }
+
+  .mobile-menu > ul:first-child {
+    border-top: 1px solid #f8f8f8;
+  }
+
+  .mobile-menu > ul > li {
+    padding: 5px 0px 5px 10px;
+    border-bottom: 1px solid #f8f8f8;
+  }
+
+  .mobile-menu > ul > li > a {
+    color: #f8f8f8;
+    font-size: 20px;
+  }
   
   .svg {
     margin-bottom: 1em;
