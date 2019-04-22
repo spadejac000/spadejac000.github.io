@@ -165,4 +165,8 @@ $('.fa-bars').on('click', () => {
   $('.mobile-menu').slideToggle();
 })
 
+$('.mobile-menu-item').on('click', () => {
+  $('.mobile-menu').slideToggle();
+})
+
   
