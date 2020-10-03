@@ -3,152 +3,131 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jacob Spade | Web Developer</title>
+    <title>Jacob Spade</title>
 
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="shortcut icon" type="image/png" href="images/favicon-32x32.png"/>
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="css/custom.css">
   </head>
   <body id="home">
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow">
-      <div class="container">
-        <a class="navbar-brand" href="#">Jacob Spade</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#about">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#projects">Projects</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
-            </li>
-          </ul>
-        </div>
+    <nav class="row desktop-nav">
+      <div class="col-sm-8">
+        <a data-aos-once="true" data-aos="fade-down" data-aos-delay="200" href="index.html"><img class="brand-logo" src="./images/android-chrome-192x192.png"/></a>
+      </div>
+      <div class="col-sm-4 nav-links-div">
+        <ul>
+          <li data-aos-once="true" data-aos="fade-down" data-aos-delay="400"><a class="nav-links" href="index.html">Home</a></li>
+          <li data-aos-once="true" data-aos="fade-down" data-aos-delay="600"><a class="nav-links" href="#about">About</a></li>
+          <li data-aos-once="true" data-aos="fade-down" data-aos-delay="800"><a class="nav-links" href="#skills">Skills</a></li>
+          <li data-aos-once="true" data-aos="fade-down" data-aos-delay="1000"><a class="nav-links" href="#projects">Projects</a></li>
+          <li data-aos-once="true" data-aos="fade-down" data-aos-delay="1200"><a class="nav-links" href="#contact">Contact</a></li>
+          <li data-aos-once="true" data-aos="fade-down" data-aos-delay="1400"><a type="button" class="btn btn-outline-primary button-link"  href="./pdf/resume.pdf" target="_blank">Resume</a></li>
+        </ul>
       </div>
     </nav>
 
-    <div class="jumbotron mb-0">
-      <img id="banner_image" src="https://images.unsplash.com/photo-1443770760695-e1bfa3e62229?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80"/>
-      <div class="black-overlay"></div>
-      <div class="banner_content">
-        <h1 class="display-4">Web Developer</h1>
-        <p class="lead">I am a full stack web developer...</p>
-        <hr class="my-4">
-        <p>... and designer</p>
-        <p class="lead">
-          <a class="btn btn-primary btn-lg" href="#contact" role="button">Contact</a>
-        </p>
-      </div>
+    <!-- side bar social media -->
+    <div class="side-social">
+      <a data-aos="fade-right" data-aos-delay="1600" href="https://github.com/spadejac000" class="github" target="_blank"><i class="fab fa-github"></i></a>
+      <a data-aos="fade-right" data-aos-delay="1800" href="https://www.linkedin.com/in/jacob-spade/" class="linkedin" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a data-aos="fade-right" data-aos-delay="2000" href="index.html" class="globe"><i class="fas fa-globe"></i></a>
     </div>
-    
-    
 
-    <!-- <div class="banner">
-      <div class="title">
-        <div class="top-overlay">
-          <h1 class="typing-txt"><span class="txt-type" data-wait="3000" data-words='["Full Stack Web Developer", "Website Designer", "Website Creator"]'></span></h1>
-        </div>
-      </div>
-      <div class="top-social-media">
-        <ul class="social-media">
-          <li><a class="grey-text text-light" href="https://github.com/spadejac000" target="_blank"><i class="fab fa-github top-github"></i></a></li>
-          <li><a class="grey-text text-light" href="https://www.linkedin.com/in/jacob-spade/" target="_blank"><i class="fab fa-linkedin top-linkedin"></i></a></li>
-          <li><a class="grey-text text-light" href="mailto:spade.jacob@yahoo.com"><i class="fas fa-envelope top-email"></i></a></li>
-        </ul>
-      </div>
-    </div> -->
+    <div class="container">
     
-    <div class="bg-light pt-3 pb-3">
-      <div class="container">
-        <h1 class="text-center mb-3" id="about">About</h1>
-        <hr class="underlines bg-primary mb-4">
-        <div class="row">
-          <div class="col-lg-4 col-sm-1 col-md-6  about">
-            <img src="images/profile_picture.jpeg" class="profile_picture"/>
-          </div>
-          <div class="col-lg-8 col-sm-12 col-md-6 bio">
-              <p>
-                <strong>
-                  Hi! Welcome to my website. My name is Jacob Spade and I am a full-stack web developer.
-                </strong>
-              </p>
-              <p>
-                <strong>
-                  In this day and age it is essential to have an online presence as a business owner. An online presence gives your customers greater accessability to your product or service. If you are looking to have your own website for your business, I can help you make that happen. I have an in depth experience with creating full-stack JavaScript applications and customizing WordPress Themes. If you're looking for unique and personalized website for your business, fill free to email me anytime.
-                </strong>
-              </p>
-          </div>
+    <div class="mt-5 mb-5 pb-5 hero-section">
+      <h4 data-aos-once="true" data-aos="fade-down" data-aos-delay="1200" id="intro-hi">Hi, my name is</h4>
+      <h1 data-aos-once="true" data-aos="fade-down" data-aos-delay="1400" id="intro-name">Jacob Spade.</h1>
+      <h1 data-aos-once="true" data-aos="fade-down" data-aos-delay="1800" id="intro-final">Builder for the internet.</h1>
+      <p data-aos-once="true" data-aos="fade-down" data-aos-delay="2200" id="intro-paragraph">I'm a front-end engineer based in Seattle, WA specializing in building and designing exceptional websites, applications, and everything in between.</p>
+      <a data-aos-once="true" data-aos="fade-down" data-aos-delay="2600" href="mailto: spade.jacob@yahoo.com" class="btn btn-outline-primary button-link">Get In Touch</a>
+    </div>
+
+    <!-- About Section -->
+
+    <div class="mt-5 pt-5 mb-5">
+      <h2 data-aos-once="true" data-aos="fade-down" data-aos-delay="3000" id="about" class="header-text pt-5 mb-5">About Me</h2>
+      <div class="row">
+        <div class="col-sm-6">
+          <p data-aos-once="true" data-aos="fade-in" data-aos-delay="200" >
+            Hello! I'm Jacob, a software engineer based in Seattle, WA.
+
+            I enjoy creating things that live on the internet, whether that be websites, applications, or anything in between. My goal is to always build products that provide pixel-perfect, performant experiences.
+            
+            Shortly after graduating from Northeastern University, I joined the engineering team at Upstatement where I work on a wide variety of interesting and meaningful projects on a daily basis.
+            
+            Here are a few technologies I've been working with recently:
+          
+            In this day and age it is essential to have an online presence as a business owner. An online presence gives your customers greater accessability to your product or service. If you are looking to have your own website for your business, I can help you make that happen. I have an in depth experience with creating full-stack JavaScript applications and customizing WordPress Themes. If you're looking for unique and personalized website for your business, fill free to email me anytime.
+          </p>
+        </div>
+        <div class="col-sm-6 text-center">
+          <img data-aos-once="true" data-aos="fade-in" data-aos-delay="400" src="images/profile_picture.jpeg" class="profile_picture"/>
         </div>
       </div>
     </div>
 
     <!-- Skills Section -->
 
-    <h1 class="text-center skills mt-3">Skills</h1>
-    <hr class="underlines bg-primary">
-
-    <div class="container mt-5">
-      <div class="row skill-row">
-        <div class="col text-center">
-          <div class="skill-pic">
-            <i class="fab fa-html5"></i>
-            <p>HTML</p>
+    <div class="mt-5 pt-5">
+      <h2 data-aos-once="true" id="skills" class="header-text mt-5 pt-5" data-aos="fade-in" data-aos-delay="200">Skills</h2>
+  
+      <div class="container mt-5">
+        <div class="row skill-row">
+          <div class="col text-center">
+            <div data-aos-once="true" class="skill-pic" data-aos="fade-in" data-aos-delay="200">
+              <i class="fab fa-html5"></i>
+              <p>HTML</p>
+            </div>
+          </div>
+          <div class="col text-center">
+            <div data-aos-once="true" class="skill-pic" data-aos="fade-in" data-aos-delay="400">
+              <i class="fab fa-css3"></i>
+              <p>CSS</p>
+            </div>
+          </div>
+          <div class="col text-center">
+            <div data-aos-once="true" class="skill-pic" data-aos="fade-in" data-aos-delay="600">
+              <i class="fab fa-js-square"></i>
+              <p>JAVASCRIPT</p>
+            </div>
+          </div>
+          <div class="col text-center">
+            <div data-aos-once="true" class="skill-pic" data-aos="fade-in" data-aos-delay="800">
+              <i class="fab fa-wordpress"></i>
+              <p>WORDPRESS</p>
+            </div>
           </div>
         </div>
-        <div class="col text-center">
-          <div class="skill-pic">
-            <i class="fab fa-css3"></i>
-            <p>CSS</p>
+        <div class="row skill-row">
+          <div class="col text-center">
+            <div data-aos-once="true" class="skill-pic" data-aos="fade-in" data-aos-delay="200">
+              <i class="fab fa-react"></i>
+              <p>REACT</p>
+            </div>
           </div>
-        </div>
-        <div class="col text-center">
-          <div class="skill-pic">
-            <i class="fab fa-js-square"></i>
-            <p>JAVASCRIPT</p>
+          <div class="col text-center">
+            <div data-aos-once="true" class="skill-pic" data-aos="fade-in" data-aos-delay="400">
+              <i class="fab fa-node-js"></i>
+              <p>NODEJS</p>
+            </div>
           </div>
-        </div>
-        <div class="col text-center">
-          <div class="skill-pic">
-            <i class="fab fa-wordpress"></i>
-            <p>WORDPRESS</p>
+          <div class="col text-center">
+            <div data-aos-once="true" class="skill-pic" data-aos="fade-in" data-aos-delay="600">
+              <i class="fas fa-database"></i>
+              <p>MONGODB</p>
+            </div>
           </div>
-        </div>
-      </div>
-      <div class="row skill-row">
-        <div class="col text-center">
-          <div class="skill-pic">
-            <i class="fab fa-react"></i>
-            <p>REACT</p>
-          </div>
-        </div>
-        <div class="col text-center">
-          <div class="skill-pic">
-            <i class="fab fa-node-js"></i>
-            <p>NODEJS</p>
-          </div>
-        </div>
-        <div class="col text-center">
-          <div class="skill-pic">
-            <i class="fas fa-database"></i>
-            <p>MONGODB</p>
-          </div>
-        </div>
-        <div class="col text-center">
-          <div class="skill-pic">
-            <i class="fab fa-git-square"></i>
-            <p>GIT</p>
+          <div class="col text-center">
+            <div data-aos-once="true" class="skill-pic" data-aos="fade-in" data-aos-delay="800">
+              <i class="fab fa-git-square"></i>
+              <p>GIT</p>
+            </div>
           </div>
         </div>
       </div>
@@ -156,134 +135,101 @@
   
     <!-- Projects Section -->
     
-    <h1 class="text-center" id="projects">Projects</h1>
-    <hr class="underlines bg-primary mb-4">
+    <h2 id="projects" class="header-text mt-5 pt-5 mb-5">Projects</h2>
     <div class="grid container" align="center">
 
-      <div class="card mb-5 shadow bg-light" style="width: 18rem;">
-        <img src="images/blackjack.png" class="card-img-top" alt="...">
+      <div data-aos-once="true" data-aos="fade-in" data-aos-delay="200" class="card mb-5 shadow" style="width: 18rem;">
+        <img src="images/under_construction.jpg" class="card-img-top" alt="...">
         <div class="card-body">
-          <h5 class="card-title">Blackjack</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">See Details</a>
+          <h5 class="card-title">ReactCommerce</h5>
+          <p class="card-text">This is an Ecommerce web app that takes the user through the whole process of purchasing a product.</p>
+          <a href="react_commerce.html" class="btn btn-outline-primary button-link">See Details</a>
         </div>
       </div>
 
-      <div class="card mb-5 shadow bg-light" style="width: 18rem;">
-        <img src="images/movie-app.png" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Movie App</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">See Details</a>
-        </div>
-      </div>
-
-      <div class="card mb-5 shadow bg-light" style="width: 18rem;">
-        <img src="images/punchcard-app.png" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Punch Card App</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">See Details</a>
-        </div>
-      </div>
-
-      <div class="card mb-5 shadow bg-light" style="width: 18rem;">
-        <img src="images/goodmarket.png" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Good Market</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">See Details</a>
-        </div>
-      </div>
-
-      <div class="card mb-5 shadow bg-light" style="width: 18rem;">
-        <img src="images/cali_windows_doors.png" class="card-img-top" alt="...">
+      <div data-aos-once="true" data-aos="fade-in" data-aos-delay="400" class="card mb-5 shadow" style="width: 18rem;">
+        <a href="https://www.calidoorsandwindows.com/" target="_blank"><img src="images/cali_windows_doors.png" class="card-img-top" alt="..."></a>
         <div class="card-body">
           <h5 class="card-title">California Doors And Windows</h5>
           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">See Details</a>
+          <a href="cali_doors_and_windows.html" class="btn btn-outline-primary button-link">See Details</a>
         </div>
       </div>
 
-      <div class="card mb-5 shadow bg-light" style="width: 18rem;">
-        <img src="images/openmindtutoring.png" class="card-img-top" alt="...">
+      <div data-aos-once="true" data-aos="fade-in" data-aos-delay="600" class="card mb-5 shadow" style="width: 18rem;">
+        <img src="images/under_construction.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Punch Card App</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-outline-primary button-link disabled">See Details</a>
+        </div>
+      </div>
+
+      <div data-aos-once="true" data-aos="fade-in" data-aos-delay="200" class="card mb-5 shadow" style="width: 18rem;">
+        <img src="images/under_construction.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Good Market</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-outline-primary button-link disabled">See Details</a>
+        </div>
+      </div>
+
+      <div data-aos-once="true" data-aos="fade-in" data-aos-delay="400" class="card mb-5 shadow" style="width: 18rem;">
+        <img src="images/under_construction.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Movie App</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-outline-primary button-link disabled">See Details</a>
+        </div>
+      </div>
+
+      <div data-aos-once="true" data-aos="fade-in" data-aos-delay="600" class="card mb-5 shadow" style="width: 18rem;">
+        <img src="images/under_construction.jpg" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">Open Mind Tutoring</h5>
           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">See Details</a>
+          <a href="#" class="btn btn-outline-primary button-link disabled">See Details</a>
         </div>
       </div>
     </div>
 
-    <!-- testimonial carousel -->
-    <div class="bg-light pt-5 testimonial-carsousel">
-      <h1 class="text-center">Client Testimonials</h1>
-      <hr class="underlines bg-primary">
-      <div id="carouselExampleIndicators" class="carousel slide container" data-ride="carousel">
-        <ol class="carousel-indicators">
-          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active bg-primary"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="1" class="bg-primary"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="2" class="bg-primary"></li>
-        </ol>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <p class="text-center">"I am so pleased with the work Jacob did for me in establishing my company's website.  Jacob exceeded my expectations by completing the website in a professional and timely fashion.  I felt as though my company's success was Jacob's priority.  Furthermore, Jacob displayed creativity and originality in the design of my web page.  I would recommend Jacob to anyone interested in promoting their interests online."</p>
-            <p class="text-center mb-5">
-              -Open Mind Tutoring
-            </p>
-          </div>
-          <div class="carousel-item">
-            <p class="text-center">
-              "I am so pleased with the work Jacob did for me in establishing my company's website.  Jacob exceeded my expectations by completing the website in a professional and timely fashion.  I felt as though my company's success was Jacob's priority.  Furthermore, Jacob displayed creativity and originality in the design of my web page.  I would recommend Jacob to anyone interested in promoting their interests online."
-            </p>
-            <p class="text-center mb-5">
-              -Open Mind Tutoring
-            </p>
-          </div>
-          <div class="carousel-item">
-            <p class="text-center">
-              "I am so pleased with the work Jacob did for me in establishing my company's website.  Jacob exceeded my expectations by completing the website in a professional and timely fashion.  I felt as though my company's success was Jacob's priority.  Furthermore, Jacob displayed creativity and originality in the design of my web page.  I would recommend Jacob to anyone interested in promoting their interests online."
-            </p>
-            <p class="text-center mb-5">
-              -Open Mind Tutoring
-            </p>
-          </div>
-        </div>
-        <a class="carousel-control-prev pb-5" href="#carouselExampleIndicators" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon bg-primary" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next pb-5" href="#carouselExampleIndicators" role="button" data-slide="next">
-          <span class="carousel-control-next-icon bg-primary" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
-      </div>
-    </div>
+    <!-- Contact section -->
 
-    <footer class="page-footer bg-primary text-light pt-5 pb-2" id="contact">
+    <div class="text-center mt-5 pt-5 mb-5 pb-5">
+      <a href="mailto: spade.jacob@yahoo.com" class="mt-5 btn btn-lg btn-outline-primary button-link" data-aos="fade-in" data-aos-delay="200" data-aos-once="true">Get In Touch</a>
+    </div>
+    
+    <footer class="page-footer text-light pt-5 pb-2 mb-5" id="contact">
       <div class="container">
         <div class="text-center">
-            <h5 class="white-text mb-3">Contact Information</h5>
-            <ul class="social-media">
-              <li><a class="grey-text text-light" href="https://github.com/spadejac000" target="_blank"><i class="fab fa-github bottom-github"></i><p>Github</p></a></li>
-              <li><a class="grey-text text-light" href="https://www.linkedin.com/in/jacob-spade/" target="_blank"><i class="fab fa-linkedin bottom-linkedin"></i><p>Linkedin</p></a></li>
-              <li><a class="grey-text text-light" href="mailto:spade.jacob@yahoo.com"><i class="fas fa-envelope bottom-email"></i><p>Email</p></a></li>
-              <li><a class="grey-text text-light" href="pdf/resume.pdf" target="_blank"><i class="fas fa-file-alt bottom-resume"></i><p>Resume</p></a></li>
-            </ul>
+          <ul class="social-media">
+            <li data-aos-once="true" data-aos="fade-in" data-aos-delay="200"><a class="grey-text text-light" href="https://github.com/spadejac000" target="_blank"><i class="fab fa-github bottom-github"></i><p>Github</p></a></li>
+            <li data-aos-once="true" data-aos="fade-in" data-aos-delay="400"><a class="grey-text text-light" href="https://www.linkedin.com/in/jacob-spade/" target="_blank"><i class="fab fa-linkedin bottom-linkedin"></i><p>Linkedin</p></a></li>
+            <li data-aos-once="true" data-aos="fade-in" data-aos-delay="600"><a class="grey-text text-light" href="mailto:spade.jacob@yahoo.com"><i class="fas fa-envelope bottom-email"></i><p>Email</p></a></li>
+            <li data-aos-once="true" data-aos="fade-in" data-aos-delay="800"><a class="grey-text text-light" href="pdf/resume.pdf" target="_blank"><i class="fas fa-file-alt bottom-resume"></i><p>Resume</p></a></li>
+          </ul>
         </div>
-      </div>
-      <div class="footer-copyright">
-        <div class="container">
-        © 2020 Jacob Spade
-          <a href="#home" class="top-link">
+        <div class="footer-copyright">
+          <div class="container">
+            <span>
+              © 2020 Jacob Spade
+            </span>
+            <a href="#home" class="top-link">
               <i class="fas fa-chevron-up"></i>
-          </a>
+            </a>
+          </div>
         </div>
       </div>
     </footer>
 
+  </div>
+
     <!-- Compiled and minified JavaScript -->
 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
