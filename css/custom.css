@@ -419,4 +419,31 @@ ul.social-media {
     width: 100%;
   }
 
+  /* header titles mobile view */
+
+  .header-text {
+    width: 100%;
+    text-align: center;
+    border-bottom: none;
+  }
+
+  /* profile picture mobile view */
+
+  .profile_picture {
+    box-shadow: none;
+  }
+
+  /* footer mobile view */
+
+  ul.social-media {
+    width: 100%;
+  }
+
+  /* specific project pages mobile view */
+
+  .project-page-picture {
+    margin-top: 2em;
+    width: 100%;
+  }
+
 }
