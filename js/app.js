@@ -138,16 +138,16 @@ TypeWriter.prototype.type = function() {
 }
 
 // Init On DOM Load
-document.addEventListener('DOMContentLoaded', init);
+// document.addEventListener('DOMContentLoaded', init);
 
-// Init App
-function init() {
-  const txtElement = document.querySelector('.txt-type');
-  const words = JSON.parse(txtElement.getAttribute('data-words'));
-  const wait = txtElement.getAttribute('data-wait');
-  // Init Typewriter
-  new TypeWriter(txtElement, words, wait);
-}
+// // Init App
+// function init() {
+//   const txtElement = document.querySelector('.txt-type');
+//   const words = JSON.parse(txtElement.getAttribute('data-words'));
+//   const wait = txtElement.getAttribute('data-wait');
+//   // Init Typewriter
+//   new TypeWriter(txtElement, words, wait);
+// }
 
 // navbar scrolling
 $(window).on('scroll', () => {
@@ -169,4 +169,13 @@ $('.mobile-menu-item').on('click', () => {
   $('.mobile-menu').slideToggle();
 })
 
+/* Open the sidenav */
+function openNav() {
+  document.getElementsByClassName("mobile-nav")[0].style.width = "100%";
+}
+
+/* Close/hide the sidenav */
+function closeNav() {
+  document.getElementsByClassName("mobile-nav")[0].style.width = "0";
+}
   
