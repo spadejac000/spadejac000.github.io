@@ -178,4 +178,13 @@ function openNav() {
 function closeNav() {
   document.getElementsByClassName("mobile-nav")[0].style.width = "0";
 }
-  
+
+document.getElementsByClassName("mobile-nav-li")[0].addEventListener("click", closeNav);
+
+document.getElementsByClassName("mobile-nav-li")[1].addEventListener("click", closeNav);
+
+document.getElementsByClassName("mobile-nav-li")[2].addEventListener("click", closeNav);
+
+document.getElementsByClassName("mobile-nav-li")[3].addEventListener("click", closeNav);
+
+document.getElementsByClassName("mobile-nav-li")[4].addEventListener("click", closeNav);

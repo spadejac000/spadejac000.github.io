@@ -319,7 +319,7 @@ ul.social-media {
     grid-template-columns: 1fr 1fr 1fr;
     background-color: #0a192f;;
     position: fixed;
-    width: 100%;
+    width: 0px;
     z-index: 10001;
     height: 100vh;
     margin-top: 0px;
@@ -401,6 +401,12 @@ ul.social-media {
 
   .profile_picture {
     box-shadow: none;
+  }
+
+  /* project cards */
+
+  div.grid.container {
+    grid-template-columns: 100%;
   }
 
   /* footer mobile view */
