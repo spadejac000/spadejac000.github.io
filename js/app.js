@@ -188,3 +188,5 @@ document.getElementsByClassName("mobile-nav-li")[2].addEventListener("click", cl
 document.getElementsByClassName("mobile-nav-li")[3].addEventListener("click", closeNav);
 
 document.getElementsByClassName("mobile-nav-li")[4].addEventListener("click", closeNav);
+
+AOS.init({disable: 'mobile'});

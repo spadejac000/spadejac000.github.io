@@ -395,6 +395,7 @@ ul.social-media {
     width: 100%;
     text-align: center;
     border-bottom: none;
+    margin-bottom: 1em;
   }
 
   /* profile picture mobile view */
@@ -422,4 +423,20 @@ ul.social-media {
     width: 100%;
   }
 
+}
+
+@media (min-width: 601px) {
+
+  /* Spacing between sections */
+  .hero-section,
+  #about-section,
+  #skills-section,
+  #projects-section,
+  #contact-section {
+    margin-bottom: 10em;
+  }
+
+  .header-text {
+    margin-bottom: 3em;
+  }
 }
