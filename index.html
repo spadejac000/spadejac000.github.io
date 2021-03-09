@@ -15,18 +15,20 @@
   </head>
   <body id="home">
 
-    <nav class="row desktop-nav">
-      <div class="col-sm-8">
-        <a data-aos-once="true" data-aos="fade-down" data-aos-delay="200" href="index.html"><img class="brand-logo" src="./images/android-chrome-192x192.png"/></a>
-      </div>
-      <div class="col-sm-4 nav-links-div">
-        <ul>
-          <li data-aos-once="true" data-aos="fade-down" data-aos-delay="400"><a class="nav-links" href="index.html">Home</a></li>
-          <li data-aos-once="true" data-aos="fade-down" data-aos-delay="600"><a class="nav-links" href="#about">About</a></li>
-          <li data-aos-once="true" data-aos="fade-down" data-aos-delay="800"><a class="nav-links" href="#skills">Skills</a></li>
-          <li data-aos-once="true" data-aos="fade-down" data-aos-delay="1000"><a class="nav-links" href="#projects">Projects</a></li>
-          <li data-aos-once="true" data-aos="fade-down" data-aos-delay="1200"><a type="button" class="btn btn-outline-primary button-link"  href="./pdf/resume.pdf" target="_blank">Resume</a></li>
-        </ul>
+    <nav class="desktop-nav">
+      <div class="container row nav-container">
+        <div class="col-sm-8 nav-col">
+          <a href="index.html"><img class="brand-logo" src="./images/android-chrome-192x192.png"/></a>
+        </div>
+        <div class="col-sm-4 nav-links-div nav-col">
+          <ul>
+            <li><a class="nav-links" href="index.html">Home</a></li>
+            <li><a class="nav-links" href="#about">About</a></li>
+            <li><a class="nav-links" href="#skills">Skills</a></li>
+            <li><a class="nav-links" href="#projects">Projects</a></li>
+            <li><a type="button" class="btn btn-warning button-link btn-lg"  href="./pdf/resume.pdf" target="_blank" >Resume</a></li>
+          </ul>
+        </div>
       </div>
     </nav>
 
@@ -46,28 +48,31 @@
 
     <!-- side bar social media -->
     <div class="side-social">
-      <a data-aos="fade-right" data-aos-delay="1600" href="https://github.com/spadejac000" class="github" target="_blank"><i class="fab fa-github"></i></a>
-      <a data-aos="fade-right" data-aos-delay="1800" href="https://www.linkedin.com/in/jacob-spade/" class="linkedin" target="_blank"><i class="fab fa-linkedin"></i></a>
-      <a data-aos="fade-right" data-aos-delay="2000" href="index.html" class="globe"><i class="fas fa-globe"></i></a>
+      <a href="https://github.com/spadejac000" class="github" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/jacob-spade/" class="linkedin" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="index.html" class="globe"><i class="fas fa-globe"></i></a>
+    </div>
+    
+    <div class="hero-section">
+      <div class="overlay"></div>
+      <div class="container hero-section-text">
+        <h4 id="intro-hi">Hi, my name is</h4>
+        <h1 id="intro-name">Jacob Spade.</h1>
+        <h1 id="intro-final">Full Stack Web Developer</h1>
+        <p id="intro-paragraph">I'm a full-stack engineer based in Seattle, WA specializing in building and designing exceptional websites, applications, and everything in between.</p>
+        <a href="mailto: spade.jacob@yahoo.com" class="btn btn-warning btn-lg button-link">Get In Touch</a>
+      </div>
     </div>
 
-    <div class="container">
-    
-    <div class="mt-5 hero-section">
-      <h4 data-aos-once="true" data-aos="fade-down" data-aos-delay="1200" id="intro-hi">Hi, my name is</h4>
-      <h1 data-aos-once="true" data-aos="fade-down" data-aos-delay="1400" id="intro-name">Jacob Spade.</h1>
-      <h1 data-aos-once="true" data-aos="fade-down" data-aos-delay="1800" id="intro-final">Builder for the internet.</h1>
-      <p data-aos-once="true" data-aos="fade-down" data-aos-delay="2200" id="intro-paragraph">I'm a full-stack engineer based in Seattle, WA specializing in building and designing exceptional websites, applications, and everything in between.</p>
-      <a data-aos-once="true" data-aos="fade-down" data-aos-delay="2600" href="mailto: spade.jacob@yahoo.com" class="btn btn-outline-primary button-link">Get In Touch</a>
-    </div>
+  <div class="container">
 
     <!-- About Section -->
 
     <div id="about-section">
-      <h2 data-aos-once="true" data-aos="fade-down" data-aos-delay="2800" id="about" class="header-text pt-5">About Me</h2>
+      <h2 id="about" class="header-text">About Me</h2>
       <div class="row">
         <div class="col-sm-6">
-          <p data-aos-once="true" data-aos="fade-in" data-aos-delay="200" >
+          <p>
             Hello! I'm Jacob, a software engineer based in Seattle, WA. <br/><br/>
 
             I enjoy creating things that live on the internet, whether that be websites, applications, or anything in between. My goal is to always build products that provide a great user experience. <br/><br/>
@@ -78,7 +83,7 @@
           </p>
         </div>
         <div class="col-sm-6 text-center">
-          <img data-aos-once="true" data-aos="fade-in" data-aos-delay="400" src="images/profile_picture.jpeg" class="profile_picture"/>
+          <img src="images/profile_picture.jpeg" class="profile_picture"/>
         </div>
       </div>
     </div>
@@ -86,30 +91,30 @@
     <!-- Skills Section -->
 
     <div class="mt-5" id="skills-section">
-      <h2 data-aos-once="true" id="skills" class="header-text" data-aos="fade-in" data-aos-delay="200">Skills</h2>
+      <h2 id="skills" class="header-text">Skills</h2>
   
       <div class="container mt-3">
         <div class="row skill-row">
           <div class="col-md-3 text-center">
-            <div data-aos-once="true" class="skill-pic" data-aos="fade-in" data-aos-delay="200">
+            <div class="skill-pic">
               <i class="fab fa-html5"></i>
               <p>HTML</p>
             </div>
           </div>
           <div class="col-md-3 text-center">
-            <div data-aos-once="true" class="skill-pic" data-aos="fade-in" data-aos-delay="400">
+            <div class="skill-pic">
               <i class="fab fa-css3"></i>
               <p>CSS</p>
             </div>
           </div>
           <div class="col-md-3 text-center">
-            <div data-aos-once="true" class="skill-pic" data-aos="fade-in" data-aos-delay="600">
+            <div class="skill-pic">
               <i class="fab fa-js-square"></i>
               <p>JAVASCRIPT</p>
             </div>
           </div>
           <div class="col-md-3 text-center">
-            <div data-aos-once="true" class="skill-pic" data-aos="fade-in" data-aos-delay="800">
+            <div class="skill-pic">
               <i class="fab fa-wordpress"></i>
               <p>WORDPRESS</p>
             </div>
@@ -117,25 +122,25 @@
         </div>
         <div class="row skill-row">
           <div class="col-md-3 text-center">
-            <div data-aos-once="true" class="skill-pic" data-aos="fade-in" data-aos-delay="200">
+            <div class="skill-pic">
               <i class="fab fa-react"></i>
               <p>REACT</p>
             </div>
           </div>
           <div class="col-md-3 text-center">
-            <div data-aos-once="true" class="skill-pic" data-aos="fade-in" data-aos-delay="400">
+            <div class="skill-pic">
               <i class="fab fa-node-js"></i>
               <p>NODEJS</p>
             </div>
           </div>
           <div class="col-md-3 text-center">
-            <div data-aos-once="true" class="skill-pic" data-aos="fade-in" data-aos-delay="600">
+            <div class="skill-pic">
               <i class="fas fa-database"></i>
               <p>MONGODB</p>
             </div>
           </div>
           <div class="col-md-3 text-center">
-            <div data-aos-once="true" class="skill-pic" data-aos="fade-in" data-aos-delay="800">
+            <div class="skill-pic">
               <i class="fab fa-git-square"></i>
               <p>GIT</p>
             </div>
@@ -149,98 +154,132 @@
     <h2 id="projects" class="header-text">Projects</h2>
     <div class="grid container" align="center" id="projects-section">
 
-      <div data-aos-once="true" data-aos="fade-in" data-aos-delay="200" class="card mb-5 shadow" style="width: 18rem;">
+      <div class="card mb-5 " style="width: 18rem;">
         <img src="images/react_commerce.png" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">ReactCommerce</h5>
           <p class="card-text">This is an Ecommerce web app that takes the user through the whole process of purchasing a product.</p>
-          <a href="react_commerce.html" class="btn btn-outline-primary button-link">See Details</a>
+          <a href="react_commerce.html" class="btn btn-warning button-link">See Details</a>
         </div>
       </div>
 
-      <div data-aos-once="true" data-aos="fade-in" data-aos-delay="400" class="card mb-5 shadow" style="width: 18rem;">
+      <div class="card mb-5 " style="width: 18rem;">
         <a href="https://www.calidoorsandwindows.com/" target="_blank"><img src="images/cali_windows_doors.png" class="card-img-top" alt="..."></a>
         <div class="card-body">
           <h5 class="card-title">California Doors And Windows</h5>
           <p class="card-text">This is a real world website used by the business: California Doors and Windows.</p>
-          <a href="cali_doors_and_windows.html" class="btn btn-outline-primary button-link">See Details</a>
+          <a href="cali_doors_and_windows.html" class="btn btn-warning button-link">See Details</a>
         </div>
       </div>
 
-      <div data-aos-once="true" data-aos="fade-in" data-aos-delay="600" class="card mb-5 shadow" style="width: 18rem;">
+      <div class="card mb-5 " style="width: 18rem;">
         <img src="images/blackjack.png" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">Blackjack</h5>
           <p class="card-text">The game of Blackjack</p>
-          <a href="blackjack.html" class="btn btn-outline-primary button-link">See Details</a>
+          <a href="blackjack.html" class="btn btn-warning button-link">See Details</a>
         </div>
       </div>
 
-      <div data-aos-once="true" data-aos="fade-in" data-aos-delay="200" class="card mb-5 shadow" style="width: 18rem;">
+      <div class="card mb-5 " style="width: 18rem;">
         <img src="images/good_market.png" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">Good Market</h5>
           <p class="card-text">An app where a buyer can purchase an item and a seller can donate a portion of their earnings to charity.</p>
-          <a href="good_market.html" class="btn btn-outline-primary button-link">See Details</a>
+          <a href="good_market.html" class="btn btn-warning button-link">See Details</a>
         </div>
       </div>
 
-      <div data-aos-once="true" data-aos="fade-in" data-aos-delay="400" class="card mb-5 shadow" style="width: 18rem;">
+      <div class="card mb-5 " style="width: 18rem;">
         <img src="images/movieapp.png" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">Movie App</h5>
           <p class="card-text">An app where a user can look up movies and create lists of movies they own or would like to own.</p>
-          <a href="movieapp.html" class="btn btn-outline-primary button-link">See Details</a>
+          <a href="movieapp.html" class="btn btn-warning button-link">See Details</a>
         </div>
       </div>
 
-      <div data-aos-once="true" data-aos="fade-in" data-aos-delay="600" class="card mb-5 shadow" style="width: 18rem;">
+      <div class="card mb-5 " style="width: 18rem;">
         <img src="images/under_construction.jpg" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">Open Mind Tutoring</h5>
           <p class="card-text">A website for a tutoring company in California.</p>
-          <a href="#" class="btn btn-outline-primary button-link disabled">See Details</a>
+          <a href="#" class="btn btn-warning button-link disabled">See Details</a>
         </div>
       </div>
     </div>
 
     <!-- Contact section -->
 
-    <div class="text-center" id="contact-section">
-      <a href="mailto: spade.jacob@yahoo.com" class="btn btn-lg btn-outline-primary button-link" data-aos="fade-in" data-aos-delay="200" data-aos-once="true">Get In Touch</a>
-    </div>
-    
-    <footer class="page-footer text-light pt-5 pb-2 mb-5" id="contact">
-      <div class="container">
-        <div class="text-center">
-          <ul class="social-media">
-            <li data-aos-once="true" data-aos="fade-in" data-aos-delay="200"><a class="grey-text text-light" href="https://github.com/spadejac000" target="_blank"><i class="fab fa-github bottom-github"></i><p>Github</p></a></li>
-            <li data-aos-once="true" data-aos="fade-in" data-aos-delay="400"><a class="grey-text text-light" href="https://www.linkedin.com/in/jacob-spade/" target="_blank"><i class="fab fa-linkedin bottom-linkedin"></i><p>Linkedin</p></a></li>
-            <li data-aos-once="true" data-aos="fade-in" data-aos-delay="600"><a class="grey-text text-light" href="mailto:spade.jacob@yahoo.com"><i class="fas fa-envelope bottom-email"></i><p>Email</p></a></li>
-            <li data-aos-once="true" data-aos="fade-in" data-aos-delay="800"><a class="grey-text text-light" href="pdf/resume.pdf" target="_blank"><i class="fas fa-file-alt bottom-resume"></i><p>Resume</p></a></li>
+    <div class="contact-section">
+      <div class="contact-section-column-1">
+
+        <div>
+          <h1 class="contact-section-title">Get In Touch</h1>
+          <p>Want to hire me? Contact me!</p>
+        </div>
+
+        <div>
+          <div class="contact-section-info"><i class="fas fa-envelope fa-2x mr-2"></i> <a>spade.jacob@yahoo.com</a></div>
+          <div class="contact-section-info"><i class="fas fa-map-marker-alt fa-2x mr-2"></i> <span>Seattle, WA</span></div>
+        </div>
+        
+        <div class="social-menu">
+          <ul>
+            <li><a href="https://github.com/spadejac000" target="_blank"><i class="fab fa-github-alt"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/jacob-spade/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+            <li><a href="mailto:spade.jacob@yahoo.com"><i class="fas fa-envelope"></i></a></li>
           </ul>
         </div>
+
+      </div>
+
+      <div class="form-container">
+        <form action="https://formspree.io/f/moqpgvod" method="POST" id="my-form">
+          <div class="form-group">
+            <label for="name">Name</label><br/>
+            <input class="form-input" type="text" id="name" name="name">
+          </div>
+    
+          <div class="form-group">
+            <label for="email">Email</label><br/>
+            <input class="form-input" type="text" id="email" name="email">
+          </div>
+    
+          <div class="form-group">
+            <label for="subject">Subject</label><br/>
+            <input class="form-input" type="text" id="subject" name="subject">
+          </div>
+    
+          <div class="form-group">
+            <label for="message">Message</label><br/>
+            <textarea class="form-input form-textarea" type="text" id="message" name="message"></textarea>
+          </div>
+    
+          <button class="btn submit-btn btn-warning btn-lg" type="submit">Submit</button>
+        </form>
+      </div>
+      
+    </div>
+    <div id="status"></div>
+  </div><!-- /container -->
+    
+    <footer class="page-footer text-light pt-4 pb-4" id="contact">
+      <div class="container">
         <div class="footer-copyright">
-          <div class="container">
             <span>
-              © 2020 Jacob Spade
+              © 2021 Jacob Spade
             </span>
             <a href="#home" class="top-link">
               <i class="fas fa-chevron-up"></i>
             </a>
-          </div>
         </div>
       </div>
     </footer>
 
-  </div>
+  
 
     <!-- Compiled and minified JavaScript -->
-
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>

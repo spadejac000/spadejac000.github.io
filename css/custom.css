@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:700');
 
+:root {
+  --primary-color: #0275d8;
+  --secondary-color: #f0ad4e;
+}
+
 html {
   scroll-behavior: smooth;
   max-width: 100%;
@@ -10,11 +15,14 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  background: #0a192f;
 }
 
 * p, span {
-  color: #8892b0;
+  color: black;
+}
+
+footer span {
+  color: white;
 }
 
 .portfolio-piece {
@@ -32,9 +40,15 @@ body {
 /* navbar styling */
 
 nav {
-  background: #0a192f;
-  padding-left: 5rem;
-  padding-right: 5rem;
+  background: var(--primary-color);
+}
+
+.nav-container {
+  margin: 0 auto;
+}
+
+.nav-col {
+  padding: 0px;
 }
 
 .nav-links-div {
@@ -58,27 +72,16 @@ nav ul li {
 }
 
 nav ul li a {
-  color: #8892b0;
+  color: white;
   text-decoration: none;
 }
 
 nav ul li a:hover {
-  color: #64ffda;
-}
-
-.button-link {
-  border-color: #64ffda;
-  color:#64ffda!important;
-}
-
-.button-link:hover {
-  background-color: rgba(100, 255, 218, .3);
-  border-color: #64ffda;
-  color:#64ffda;
+  color: var(--secondary-color);
 }
 
 .brand-logo {
-  width: 10%
+  width: 12%
 }
 
 /* side social */
@@ -89,56 +92,93 @@ nav ul li a:hover {
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
+  z-index: 5;
+}
+
+.side-social:nth-child(1) {
+  background: red;
 }
 
 .side-social a {
-  border: 1px solid #0a192f;
   display: block;
   text-align: center;
   padding: 16px;
   transition: all 0.3s ease;
-  color: #0a192f;
+  color: white;
   font-size: 20px;
 }
 
-/* Style the social media icons with color, if you want */
-.side-social a:hover {
-  background-color: #0a192f;
-  color: #64ffda;
+.github {
+  background: #211F1F;
+}
+
+.linkedin {
+  background: #0077b5;
+}
+
+.globe {
+  background: #4b11a8;
 }
 
 .github,
 .linkedin,
 .globe {
-  background: #64ffda;
   color: #0a192f;
 }
 
 /* hero section */
 
+.hero-section {
+  background-image: url('https://images.unsplash.com/photo-1470790376778-a9fbc86d70e2?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=949&q=80');
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 5rem 0rem;
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, .7);
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.hero-section-text {
+  z-index: 1;
+  position: relative;
+}
+
 #intro-hi {
-  color: #64ffda;
+  color: white;
+  z-index: 1;
 }
 
 #intro-name {
-  color: #ccd6f6;
+  color: white;
   font-size: clamp(40px, 8vw, 80px);
+  z-index: 1;
 }
 
 #intro-final {
-  color: #8892b0;
+  color: white;
   font-size: clamp(40px, 8vw, 80px);
+  z-index: 1;
 }
 
 #intro-paragraph {
+  color: white;
   width: 50%;
+  z-index: 1;
 }
 
 /* About me section */
 
 .header-text {
-  color: #ccd6f6;
-  border-bottom: 1px solid #ccd6f6;
+  color: black;
+  border-bottom: 1px solid black;
   width: 30%;
 }
 
@@ -171,7 +211,7 @@ nav ul li a:hover {
 .profile_picture {
   width: 60%;
   border-radius: 10px;
-  box-shadow: 30px 30px 0px #0a192f, 32px 32px 0px #64ffda;
+  box-shadow: 30px 30px 0px #0a192f, 32px 32px 0px var(--secondary-color);
 }
 
 /* SKILLS */
@@ -183,13 +223,13 @@ nav ul li a:hover {
 
 .skill-pic > i {
   font-size: 100px;
-  color: #8892b0;
+  color: black;
 }
 
 .top-link {
   float: right;
   color: #0a192f;
-  background-color: #64ffda;
+  background-color: var(--secondary-color);
   text-align: center;
   border-radius: 3px;
   width: 32px;
@@ -198,8 +238,7 @@ nav ul li a:hover {
 ul.social-media {
   margin-bottom: 0;
   display: flex;
-  justify-content: space-between;
-  width: 30%;
+  justify-content: center;
   margin: auto;
 }
 
@@ -219,12 +258,17 @@ ul.social-media {
 /* Portfolio Projects */
 
 .card {
-  background-color: #172a45;
-  box-shadow: 0 10px 30px -15px rgba(2,12,27,0.7);
+  background-color: var(--primary-color);
+  border: none;
+  box-shadow: 5px 5px 16px 0px rgba(0,0,0,0.3);
+}
+
+.card p {
+  color: white;
 }
 
 .card-title {
-  color: #ccd6f6;
+  color: white;
   font-size: 1.5em;
   font-weight: 600;
 }
@@ -256,10 +300,167 @@ img {
   justify-content: stretch;
 }
 
+/* Contact section */
+
+.contact-section {
+  display: flex;
+}
+
+.contact-section > div {
+  flex: 1;
+}
+
+.contact-section-column-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.contact-section-info {
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+}
+
+.fa-map-marker-alt {
+  color: #dd4b3e;
+}
+
+.fa-envelope {
+  color: #34A853;
+}
+
+.social-menu ul {
+  display: flex;
+  justify-content: center;
+  padding-left: 0px;
+  margin-bottom: 0px;
+}
+
+.social-menu ul li {
+  list-style: none;
+  margin: 0 1rem;
+}
+
+.social-menu ul li .fab,
+.social-menu ul li .fas {
+  font-size: 2rem;
+  line-height: 4rem;
+  transition: .6s;
+}
+
+.social-menu ul li:hover 
+.fab {
+  color: white;
+}
+
+.social-menu ul li:hover 
+.fas {
+  color: white;
+}
+
+.social-menu ul li a {
+  position: relative;
+  display: block;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  text-align: center;
+  transition: .6s;
+}
+
+.social-menu ul li a:hover {
+  background-color: black;
+}
+
+.social-menu ul li a .fa-github-alt {
+  color: #211F1F;
+}
+
+.social-menu ul li a .fa-linkedin-in {
+  color: #0077B5;
+}
+
+.social-menu ul li a .fa-envelope {
+  color: #34A853;
+}
+
+.social-menu ul li:nth-child(1) a:hover {
+  background-color: #211F1F;
+}
+
+.social-menu ul li:nth-child(2) a:hover {
+  background-color: #0077B5;
+}
+
+.social-menu ul li:nth-child(3) a:hover {
+  background-color: #34A853;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.form-input {
+  padding: .5rem;
+  margin-bottom: 1rem;
+  width: 100%;
+  background: #e6e6e6;
+  border: none;
+  border-radius: 5px;
+}
+
+.form-textarea {
+  resize: vertical;
+}
+
+.submit-btn {
+  float: right;
+}
+
+#status {
+  text-align: center;
+  border-radius: 8px;
+  width: 50%;
+  float: right;
+  padding: .5rem;
+}
+
+#status.success {
+  background-color: rgb(211, 250, 153);
+  animation: status 4s ease forwards;
+}
+
+#status.error {
+  background-color: rgb(250, 129, 92);
+  color: white;
+  animation: status 4s ease forwards;
+}
+
+@keyframes status{
+  0% {
+    opacity: 1;
+    pointer-events: all;
+  }
+  90% {
+    opacity: 1;
+    pointer-events: all;
+  }
+  100% {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+
 /* Footer */
 
 footer {
   z-index: 1;
+  background-color: var(--primary-color);
+  color: white;
+  margin-top: 5rem;
 }
 
 /* bottom social media */
@@ -280,10 +481,6 @@ ul.social-media {
 }
 
 /* project pages styles */
-.badge {
-  background: #64ffda;
-  color: #0a192f;
-}
 
 @media (max-width: 600px) {
 
@@ -438,5 +635,9 @@ ul.social-media {
 
   .header-text {
     margin-bottom: 3em;
+  }
+
+  .menu-toggle {
+    display: none;
   }
 }

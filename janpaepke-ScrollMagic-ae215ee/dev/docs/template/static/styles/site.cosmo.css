@@ -65,7 +65,7 @@ html {
 a:focus {
   outline: thin dotted #333;
   outline: 5px auto -webkit-focus-ring-color;
-  outline-offset: -2px;
+  offset: -2px;
 }
 a:hover,
 a:active {
@@ -1032,7 +1032,7 @@ input[type="radio"]:focus,
 input[type="checkbox"]:focus {
   outline: thin dotted #333;
   outline: 5px auto -webkit-focus-ring-color;
-  outline-offset: -2px;
+  offset: -2px;
 }
 .uneditable-input,
 .uneditable-textarea {
@@ -2752,7 +2752,7 @@ button.close {
 .btn:focus {
   outline: thin dotted #333;
   outline: 5px auto -webkit-focus-ring-color;
-  outline-offset: -2px;
+  offset: -2px;
 }
 .btn.active,
 .btn:active {
@@ -2822,7 +2822,7 @@ input[type="reset"].btn-block,
 input[type="button"].btn-block {
   width: 100%;
 }
-.btn-primary.active,
+.btn-warning.active,
 .btn-warning.active,
 .btn-danger.active,
 .btn-success.active,
@@ -2830,7 +2830,7 @@ input[type="button"].btn-block {
 .btn-inverse.active {
   color: rgba(255, 255, 255, 0.75);
 }
-.btn-primary {
+.btn-warning {
   color: #ffffff;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
   background-color: #0f82f5;
@@ -2848,18 +2848,18 @@ input[type="button"].btn-block {
 
   filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
 }
-.btn-primary:hover,
-.btn-primary:focus,
-.btn-primary:active,
-.btn-primary.active,
-.btn-primary.disabled,
-.btn-primary[disabled] {
+.btn-warning:hover,
+.btn-warning:focus,
+.btn-warning:active,
+.btn-warning.active,
+.btn-warning.disabled,
+.btn-warning[disabled] {
   color: #ffffff;
   background-color: #0072e6;
   *background-color: #0066cc;
 }
-.btn-primary:active,
-.btn-primary.active {
+.btn-warning:active,
+.btn-warning.active {
   background-color: #0059b3 \9;
 }
 .btn-warning {
@@ -3206,7 +3206,7 @@ input[type="submit"].btn.btn-mini {
 .btn-group.open .btn.dropdown-toggle {
   background-color: #c8c8c8;
 }
-.btn-group.open .btn-primary.dropdown-toggle {
+.btn-group.open .btn-warning.dropdown-toggle {
   background-color: #0072e6;
 }
 .btn-group.open .btn-warning.dropdown-toggle {
@@ -3243,7 +3243,7 @@ input[type="submit"].btn.btn-mini {
 .dropup .btn-large .caret {
   border-bottom-width: 5px;
 }
-.btn-primary .caret,
+.btn-warning .caret,
 .btn-warning .caret,
 .btn-danger .caret,
 .btn-info .caret,
