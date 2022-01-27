@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jacob Spade</title>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="images/favicon-32x32.png"/>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/custom.css">
+  </head>
+  <body id="home">
+
+    <nav class="desktop-nav">
+      <div class="container row nav-container">
+        <div class="col-sm-6 nav-col">
+          <a href="index.html"><img class="brand-logo" src="./images/android-chrome-192x192.png"/></a>
+        </div>
+        <div class="col-sm-6 nav-links-div nav-col">
+          <ul>
+            <li><a class="nav-links" href="index.html"><i class="fas fa-home"></i> Home</a></li>
+            <li><a class="nav-links" href="#about"><i class="fas fa-address-card"></i> About</a></li>
+            <li><a class="nav-links" href="#skills"><i class="fas fa-bullseye"></i> Skills</a></li>
+            <li><a class="nav-links" href="#projects"><i class="fas fa-project-diagram"></i> Projects</a></li>
+            <li><a class="nav-links" href="#contact"><i class="fas fa-address-book"></i> Contact</a></li>
+            <li><a type="button" class="btn btn-outline-primary btn-lg"  href="./pdf/resume.pdf" target="_blank" >Resume</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- nav menu mobile view -->
+
+    <div class="menu-toggle"><i class="fas fa-bars" onclick="openNav()"></i></div>
+    <nav class="mobile-nav">
+      <div class="menu-exit"><i class="fas fa-times" onclick="closeNav()"></i></div>
+      <ul id="mobile-nav-ul">
+        <li class="mobile-nav-li"><a class="nav-links" href="index.html">Home</a></li>
+        <li class="mobile-nav-li"><a class="nav-links" href="#about">About</a></li>
+        <li class="mobile-nav-li"><a class="nav-links" href="#skills">Skills</a></li>
+        <li class="mobile-nav-li"><a class="nav-links" href="#projects">Projects</a></li>
+        <li class="mobile-nav-li"><a class="nav-links"  href="./pdf/resume.pdf" target="_blank">Resume</a></li>
+      </ul>
+    </nav>
+
+    <!-- side bar social media -->
+    <div class="side-social">
+      <a href="https://github.com/spadejac000" class="github" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/jacob-spade/" class="linkedin" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="index.html" class="globe"><i class="fas fa-globe"></i></a>
+    </div>
+
+    <!------------------ Hero Section  ------------------>
+    
+    <div class="hero-section container">
+      <div class="hero-section-text">
+        <div class="light-dark-mode-container">
+          <h4 class="light-dark-title">Light / Dark Mode</h4>
+          <div class="toggle-container">
+            <input class="theme-toggle-input" type="checkbox" id="switch" name="theme" /><label class="theme-toggle-label" for="switch">Toggle</label>
+          </div>
+        </div>
+        <h1 id="intro-name">Jacob Spade</h1>
+        <h1 id="intro-final">Web Developer</h1>
+        <a href="mailto: spade.jacob@yahoo.com" class="btn btn-lg button-link">Get In Touch</a>
+      </div>
+
+      <img 
+        class="hero-section-img"  
+        src="https://www.pinclipart.com/picdir/big/11-117255_coding-computer-programming-clipart.png"
+        alt=""
+      >
+    </div>
+
+  <div class="container">
+
+    <!-- About Section -->
+
+    <div id="about-section">
+      <h1 id="about" class="header-text">About Me</h1>
+      <div class="row">
+        <div class="col-sm-6">
+          <p class="about-me-paragraph">
+            Hello, my name is Jacob Spade and I am a Full Stack Web Developer. I live in the greater Seattle area. I have been working in this industry since 2017. During this time I have made many web apps. The main technologies I work with are Node, Express, React, and Postgres. For any business inquiries message me down below or send me an email at <a class="email-link" href="mailto:spade.jacob@yahoo.com">spade.jacob@yahoo.com</a>.
+          </p>
+        </div>
+        <div class="col-sm-6 text-center">
+          <img src="images/profile_picture.jpg" class="profile_picture shadow"/>
+        </div>
+      </div>
+    </div>
+
+    <!-- Skills Section -->
+
+    <div class="mt-5" id="skills-section">
+      <h1 id="skills" class="header-text">Skills</h1>
+  
+      <div class="container mt-3">
+        <div class="row skill-row">
+          <div class="col-md-3 text-center">
+            <div class="skill-pic">
+              <i class="fab fa-html5"></i>
+              <p>HTML</p>
+            </div>
+          </div>
+          <div class="col-md-3 text-center">
+            <div class="skill-pic">
+              <i class="fab fa-css3"></i>
+              <p>CSS</p>
+            </div>
+          </div>
+          <div class="col-md-3 text-center">
+            <div class="skill-pic">
+              <i class="fab fa-js-square"></i>
+              <p>JAVASCRIPT</p>
+            </div>
+          </div>
+          <div class="col-md-3 text-center">
+            <div class="skill-pic">
+              <i class="fab fa-git-square"></i>
+              <p>GIT</p>
+            </div>
+          </div>
+        </div>
+        <div class="row skill-row">
+          <div class="col-md-3 text-center">
+            <div class="skill-pic">
+              <i class="fab fa-react"></i>
+              <p>REACT</p>
+            </div>
+          </div>
+          <div class="col-md-3 text-center">
+            <div class="skill-pic">
+              <i class="fab fa-node-js"></i>
+              <p>NODEJS</p>
+            </div>
+          </div>
+          <div class="col-md-3 text-center">
+            <div class="skill-pic">
+              <i class="fas fa-database"></i>
+              <p>MONGODB</p>
+            </div>
+          </div>
+          <div class="col-md-3 text-center">
+            <div class="skill-pic">
+              <i class="fas fa-database"></i>
+              <p>POSTGRES</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Projects Section -->
+    
+    <h1 id="projects" class="header-text">Projects</h1>
+    <div class="grid container" align="center" id="projects-section">
+
+      <div class="card mb-5 " style="width: 18rem;">
+        <img src="images/react_commerce.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">ReactCommerce</h5>
+          <p class="card-text">This is an Ecommerce web app that takes the user through the whole process of purchasing a product.</p>
+          <a href="react_commerce.html" class="btn btn-warning button-link">See Details</a>
+        </div>
+      </div>
+
+      <div class="card mb-5 " style="width: 18rem;">
+        <a href="https://www.calidoorsandwindows.com/" target="_blank"><img src="images/cali_windows_doors.png" class="card-img-top" alt="..."></a>
+        <div class="card-body">
+          <h5 class="card-title">California Doors And Windows</h5>
+          <p class="card-text">This is a real world website used by the business: California Doors and Windows.</p>
+          <a href="cali_doors_and_windows.html" class="btn btn-warning button-link">See Details</a>
+        </div>
+      </div>
+
+      <div class="card mb-5 " style="width: 18rem;">
+        <img src="images/blackjack.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Blackjack</h5>
+          <p class="card-text">The game of Blackjack</p>
+          <a href="blackjack.html" class="btn btn-warning button-link">See Details</a>
+        </div>
+      </div>
+
+      <div class="card mb-5 " style="width: 18rem;">
+        <img src="images/good_market.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Good Market</h5>
+          <p class="card-text">An app where a buyer can purchase an item and a seller can donate a portion of their earnings to charity.</p>
+          <a href="good_market.html" class="btn btn-warning button-link">See Details</a>
+        </div>
+      </div>
+
+      <div class="card mb-5 " style="width: 18rem;">
+        <img src="images/movieapp.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Movie App</h5>
+          <p class="card-text">An app where a user can look up movies and create lists of movies they own or would like to own.</p>
+          <a href="movieapp.html" class="btn btn-warning button-link">See Details</a>
+        </div>
+      </div>
+
+      <div class="card mb-5 " style="width: 18rem;">
+        <img src="images/under_construction.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Open Mind Tutoring</h5>
+          <p class="card-text">A website for a tutoring company in California.</p>
+          <a href="#" class="btn button-link disabled">See Details</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact section -->
+
+    <div class="contact-section">
+      <div class="contact-section-column-1">
+
+        <div class="contact-section-title-container">
+          <h1 class="contact-section-title header-text-contact">Get In Touch</h1>
+          <p>Want to hire me? Contact me!</p>
+        </div>
+
+        <div class="contact-section-info-container">
+          <div class="contact-section-info"><i class="fas fa-envelope fa-2x mr-2"></i> <a href="mailto:spade.jacob@yahoo.com" class="email-link">spade.jacob@yahoo.com</a></div>
+          <div class="contact-section-info"><i class="fas fa-map-marker-alt fa-2x mr-2"></i> <span>Seattle, WA</span></div>
+        </div>
+        
+        <div class="social-menu">
+          <ul>
+            <li><a href="https://github.com/spadejac000" target="_blank"><i class="fab fa-github-alt"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/jacob-spade/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+            <li><a href="mailto:spade.jacob@yahoo.com"><i class="fas fa-envelope"></i></a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="form-container">
+        <form action="https://formspree.io/f/moqpgvod" method="POST" id="my-form">
+          <div class="form-group">
+            <label for="name">Name</label><br/>
+            <input class="form-input" type="text" id="name" name="name">
+          </div>
+    
+          <div class="form-group">
+            <label for="email">Email</label><br/>
+            <input class="form-input" type="text" id="email" name="email">
+          </div>
+    
+          <div class="form-group">
+            <label for="subject">Subject</label><br/>
+            <input class="form-input" type="text" id="subject" name="subject">
+          </div>
+    
+          <div class="form-group">
+            <label for="message">Message</label><br/>
+            <textarea class="form-input form-textarea" type="text" id="message" name="message"></textarea>
+          </div>
+    
+          <button class="btn submit-btn button-link btn-lg" type="submit">Submit</button>
+        </form>
+      </div>
+      
+    </div>
+    <div id="status"></div>
+  </div><!-- /container -->
+    
+  <!-- FOOTER SECTION -->
+    <footer class="page-footer text-light pt-4 pb-4" id="contact">
+      <div class="container">
+        <div class="footer-top-row">
+          <div>
+            <h1 class="footer-name">Jacob</h1>
+            <p class="footer-job-title">Web Developer</p>
+          </div>
+          <div>
+            <ul class="footer-nav-list">
+              <li><a href="./pdf/resume.pdf" target="_blank">Resume</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <div>
+            <ul class="footer-socials-list">
+              <li><a href="https://www.linkedin.com/in/jacob-spade/" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a></li>
+              <li><a href="https://github.com/spadejac000" target="_blank"><i class="fab fa-github fa-2x"></i></a></li>
+              <li><a href="https://twitter.com/JacobSpade7" target="_blank"><i class="fab fa-twitter fa-2x"></i></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-copyright text-center">
+            <span>
+              © 2022 Jacob Spade
+            </span>
+            <a href="#home" class="top-link">
+              <i class="fas fa-chevron-up"></i>
+            </a>
+        </div>
+      </div>
+    </footer>
+
+  
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+  </body>
+</html>

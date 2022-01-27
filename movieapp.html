@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jacob Spade</title>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="images/favicon-32x32.png"/>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="css/custom.css">
+  </head>
+  <body id="home">
+
+    <nav class="desktop-nav">
+      <div class="container row nav-container">
+        <div class="col-sm-8 nav-col">
+          <a href="index.html"><img class="brand-logo" src="./images/android-chrome-192x192.png"/></a>
+        </div>
+        <div class="col-sm-4 nav-links-div nav-col">
+          <ul>
+            <li><a class="nav-links" href="index.html">Home</a></li>
+            <li><a class="nav-links" href="#about">About</a></li>
+            <li><a class="nav-links" href="#skills">Skills</a></li>
+            <li><a class="nav-links" href="#projects">Projects</a></li>
+            <li><a type="button" class="btn btn-warning button-link"  href="./pdf/resume.pdf" target="_blank" >Resume</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- nav menu mobile view -->
+
+    <div class="menu-toggle"><i class="fas fa-bars" onclick="openNav()"></i></div>
+    <nav class="mobile-nav">
+      <div class="menu-exit"><i class="fas fa-times" onclick="closeNav()"></i></div>
+      <ul id="mobile-nav-ul">
+        <li class="mobile-nav-li"><a class="nav-links" href="index.html">Home</a></li>
+        <li class="mobile-nav-li"><a class="nav-links" href="#about">About</a></li>
+        <li class="mobile-nav-li"><a class="nav-links" href="#skills">Skills</a></li>
+        <li class="mobile-nav-li"><a class="nav-links" href="#projects">Projects</a></li>
+        <li class="mobile-nav-li"><a class="nav-links"  href="./pdf/resume.pdf" target="_blank">Resume</a></li>
+      </ul>
+    </nav>
+
+    <!-- side bar social media -->
+    <div class="side-social">
+      <a href="https://github.com/spadejac000" class="github" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/jacob-spade/" class="linkedin" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="index.html" class="globe"><i class="fas fa-globe"></i></a>
+    </div>
+
+    <div class="container">
+      <h2 class="header-text pt-5 mb-5">Movie App</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sodales lectus nec neque blandit, a convallis sapien lobortis. Vestibulum sed metus ante. Ut pretium diam ac lectus rutrum, a euismod orci gravida. Fusce tortor magna, pharetra et accumsan vitae, tincidunt eu ex. Fusce tincidunt ante sit amet sodales pretium. Nunc sed urna id sapien euismod pulvinar sed eu est. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus sit amet augue id sem dictum convallis. Curabitur et eros massa. Etiam auctor, arcu vel facilisis vestibulum, tellus massa cursus nibh, quis ultricies mauris mauris sed ipsum. Nam egestas varius sodales. Nulla sed ligula tellus.
+          </p>
+          <span class="badge badge-primary">HTML</span>
+          <span class="badge badge-primary">CSS</span>
+          <span class="badge badge-primary">JAVASCRIPT</span>
+          <span class="badge badge-primary">Node.js</span>
+          <span class="badge badge-primary">EJS</span>
+          <span class="badge badge-primary">OMDB API</span>
+          <div class="mt-4">
+            <a href="https://github.com/spadejac000/project2" target="_blank" type="button" class="btn btn-warning button-link">GitHub</a>
+            <a href="https://project2-movieapp-express.herokuapp.com/" type="button" class="btn btn-warning button-link" target="_blank">Live Site</a>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <img class="project-page-picture" src="./images/under_construction.jpg" alt="">
+        </div>
+      </div>
+    </div>
+
+    <footer class="page-footer text-light pt-4 pb-4" id="contact">
+      <div class="container">
+        <div class="footer-copyright">
+          <div class="container">
+            <span>
+              © 2021 Jacob Spade
+            </span>
+            <a href="#home" class="top-link">
+              <i class="fas fa-chevron-up"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <script src="js/ScrollMagic.min.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+  </body>
+</html>
