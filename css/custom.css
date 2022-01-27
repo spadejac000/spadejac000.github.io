@@ -212,7 +212,8 @@ nav ul li a:hover {
 }
 
 .brand-logo {
-  width: 15%
+  width: 12%;
+  padding: .5rem 0 .5rem 0;
 }
 
 /* side social */
