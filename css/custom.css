@@ -4,7 +4,7 @@
   --nav-color-background: transparent;
   --primary-color: #0275d8;
   --secondary-color: #292b2c;
-  --nav-border-shadow: rgba(0,0,0,0.2);
+  --nav-border-color: #eee;
   --intro-name-color: var(--primary-color);
   --card-bg-color: #292b2c;
   --color-text: black;
@@ -45,7 +45,7 @@
 
 :root[data-theme='dark'] {
   --bg: #282828;
-  --nav-border-shadow: rgba(0,0,0,0.2);
+  --nav-border-color: #b5b5b5;
   --intro-name-color: #b5b5b5;
   --intro-final-color: #b5b5b5;
   --color-text: #b5b5b5;
@@ -141,7 +141,7 @@ body {
 
 nav {
   background: var(--nav-color-background);
-  box-shadow: 0 4px 8px 0 var(--nav-border-shadow);
+  border-bottom: 1px solid var(--nav-border-color);
 }
 
 .nav-container {
@@ -366,6 +366,7 @@ html.transition *:after {
 .header-text-contact {
   color: var(--header-text-color);
   font-weight: bold;
+  font-size: 4rem;
 }
 
 .about-me-paragraph {
@@ -902,7 +903,7 @@ ul.social-media {
   #skills-section,
   #projects-section,
   #contact-section {
-    margin-bottom: 10rem;
+    margin-bottom: 5rem;
   }
 
   #projects-section {
