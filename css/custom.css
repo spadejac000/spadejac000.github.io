@@ -8,6 +8,7 @@
   --intro-name-color: var(--primary-color);
   --card-bg-color: #292b2c;
   --color-text: black;
+  --skills-color-text: white;
   --bg-primary-color-text: white;
   --btn-bg-color: #0275d8;
   --btn-border-color: #0275d8;
@@ -406,14 +407,40 @@ html.transition *:after {
 
 /* SKILLS */
 
-.skills {
-  display: block;
-  clear: both;
+#skills-section {
+  background: url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fGNvbXB1dGVyJTIwY29kZSUyMHdvcmt8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60');
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.skills-section-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 1;
+}
+
+#skills {
+  z-index: 2;
+  position: relative;
+  color: white;
 }
 
 .skill-pic > i {
   font-size: 100px;
-  color: var(--color-text);
+  color: var(--skills-color-text);
+  z-index: 2;
+  position: relative;
+}
+
+.skill-pic > p {
+  color: var(--skills-color-text);
+  z-index: 2;
+  position: relative;
 }
 
 .top-link {
