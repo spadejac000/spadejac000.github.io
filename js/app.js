@@ -16,50 +16,6 @@ window.addEventListener('DOMContentLoaded', (event) => {
     $("html, body").animate({ scrollTop: $('#contact').offset().top }, 500);
   })
   
-  // navbar scrolling
-  $(window).on('scroll', () => {
-    if($(window).width() > 600) {
-      if($(window).scrollTop()) {
-        $('nav').addClass('black');
-      } else {
-        $('nav').removeClass('black');
-      }
-    } 
-  })
-  
-  // hamburger menu functionality
-  $('.fa-bars').on('click', () => {
-    $('.mobile-menu').slideToggle();
-  })
-  
-  $('.mobile-menu-item').on('click', () => {
-    $('.mobile-menu').slideToggle();
-  })
-  
-  /* Open the sidenav */
-  function openNav() {
-    document.getElementsByClassName("mobile-nav")[0].style.width = "100%";
-  }
-
-  document.getElementsByClassName('menu-toggle')[0].addEventListener('click', openNav)
-  
-  /* Close/hide the sidenav */
-  function closeNav() {
-    document.getElementsByClassName("mobile-nav")[0].style.width = "0";
-  }
-  
-  document.getElementsByClassName("mobile-nav-li")[0].addEventListener("click", closeNav);
-  
-  document.getElementsByClassName("mobile-nav-li")[1].addEventListener("click", closeNav);
-  
-  document.getElementsByClassName("mobile-nav-li")[2].addEventListener("click", closeNav);
-  
-  document.getElementsByClassName("mobile-nav-li")[3].addEventListener("click", closeNav);
-  
-  document.getElementsByClassName("mobile-nav-li")[4].addEventListener("click", closeNav);
-
-  document.getElementsByClassName('menu-exit')[0].addEventListener('click', closeNav)
-  
   //formspree ajax
   
   window.addEventListener("DOMContentLoaded", function() {
