@@ -66,27 +66,27 @@ window.addEventListener('DOMContentLoaded', (event) => {
   
   // Light/Dark Theme *********************************************
   
-  let checkbox = document.querySelector('input[name=theme]')
+  // let checkbox = document.querySelector('input[name=theme]')
 
-  let heroSectionImg = document.querySelector('.hero-section-img')
+  // let heroSectionImg = document.querySelector('.hero-section-img')
   
-  const trans = () => {
-    document.documentElement.classList.add('transition')
-    window.setTimeout(() => {
-      document.documentElement.classList.remove('transition')
-    }, 1000)
-  }
+  // const trans = () => {
+  //   document.documentElement.classList.add('transition')
+  //   window.setTimeout(() => {
+  //     document.documentElement.classList.remove('transition')
+  //   }, 1000)
+  // }
   
-  checkbox.addEventListener('change', () => {
-    if(checkbox.checked) {
-      trans();
-      document.documentElement.setAttribute('data-theme', 'dark')
-      heroSectionImg.setAttribute('src', 'https://www.pinclipart.com/picdir/big/529-5299973_website-svg-wedsite-transparent-png-clipart-free-website.png')
-    } else {
-      trans();
-      document.documentElement.setAttribute('data-theme', 'light')
-      heroSectionImg.setAttribute('src', 'https://www.pinclipart.com/picdir/big/11-117255_coding-computer-programming-clipart.png')
-    }
-  })
+  // checkbox.addEventListener('change', () => {
+  //   if(checkbox.checked) {
+  //     trans();
+  //     document.documentElement.setAttribute('data-theme', 'dark')
+  //     heroSectionImg.setAttribute('src', 'https://www.pinclipart.com/picdir/big/529-5299973_website-svg-wedsite-transparent-png-clipart-free-website.png')
+  //   } else {
+  //     trans();
+  //     document.documentElement.setAttribute('data-theme', 'light')
+  //     heroSectionImg.setAttribute('src', 'https://www.pinclipart.com/picdir/big/11-117255_coding-computer-programming-clipart.png')
+  //   }
+  // })
 
 });
